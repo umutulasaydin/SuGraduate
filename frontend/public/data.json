@@ -1,0 +1,137 @@
+{
+    "programs":[
+        {
+            "program id": 1,
+            "program code":"BS-CS",
+            "program name":"Computer Science",
+            "entry year":"Fall 2019-2020",
+            "satisfaction":false,
+            "credit_requirement": {
+                "ECTS_credit": {
+                    "required":240,
+                    "completed":216
+                },
+                "SU_credit": {
+                    "required":125,
+                    "completed":113
+                }
+            },
+            "university_courses": {
+                "satisfaction": true,
+                "requirement": {
+                    "SU credit": {
+                        "required":41,
+                        "completed":41
+                    }
+                },
+                "courses": [
+                    {
+                        "course id":1,
+                        "course code": "SPS101",
+                        "ECTS credit": 6,
+                        "SU credit": 3
+                    },
+                    {
+                        "course id":2,
+                        "course code": "SPS102",
+                        "ECTS credit": 6,
+                        "SU credit": 3
+                    },
+                    {
+                        "course id":3,
+                        "course code": "MATH101",
+                        "ECTS credit": 6,
+                        "SU credit": 3
+                    },
+                    {
+                        "course id":4,
+                        "course code": "MATH102",
+                        "ECTS credit": 6,
+                        "SU credit": 3
+                    },
+                    {
+                        "course id":5,
+                        "course code": "ENS491",
+                        "ECTS credit": 6,
+                        "SU credit": 3
+                    }
+                ],
+                "options": []
+            },
+            "free electives": {
+                "satisfaction": false,
+                "requirement": {
+                    "SU credit": {
+                        "required":15,
+                        "completed":3
+                    }
+                },
+                "courses": [
+                    {
+                        "course id":1,
+                        "course code": "CS",
+                        "ECTS credit": 6,
+                        "SU credit": 3
+                    }
+                ],
+                "options": [
+                    {
+                        "course id":2,
+                        "course code": "CS",
+                        "ECTS credit": 6,
+                        "SU credit": 3
+                    }
+                ]
+            },
+            "area": {
+                "satisfaction": false,
+                "requirement": {
+                    "SU credit": {
+                        "required":35,
+                        "completed":15
+                    }
+                },
+                "courses": [
+                    {
+                        "course id":1,
+                        "course code": "CS310",
+                        "ECTS credit": 6,
+                        "SU credit": 3
+                    },
+                    {
+                        "course id":2,
+                        "course code": "CS210",
+                        "ECTS credit": 6,
+                        "SU credit": 3
+                    },
+                    {
+                        "course id":3,
+                        "course code": "CS408",
+                        "ECTS credit": 6,
+                        "SU credit": 3
+                    },
+                    {
+                        "course id":4,
+                        "course code": "MATH306",
+                        "ECTS credit": 6,
+                        "SU credit": 3
+                    },
+                    {
+                        "course id":5,
+                        "course code": "CS306",
+                        "ECTS credit": 6,
+                        "SU credit": 3
+                    }
+                ],
+                "options": [
+                    {
+                        "course id":2,
+                        "course code": "CS",
+                        "ECTS credit": 6,
+                        "SU credit": 3
+                    }
+                ]
+            }
+        }
+    ]
+}

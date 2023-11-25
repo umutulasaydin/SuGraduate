@@ -1,19 +1,23 @@
 
 import './App.css';
-
+import {Routes, Route, NavLink} from 'react-router-dom';
 import Header from './Header';
 import Infobar from './Infobar';
 import YearContainer from './YearContainer';
+import TabMain from './TabMain';
 
-function App() {
+function Main() {
   return (
     <div >
+   
       <Header/>
       <Infobar/>
-      <YearContainer/> 
+      <YearContainer/>
+      
     </div>
+    
   );
 }
 
-export default App;
+export default Main;
 

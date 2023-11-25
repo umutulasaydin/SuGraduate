@@ -10,7 +10,7 @@ const Header = () => {
   
     <div className="header">
       <h1>suGRADUATE</h1>
-     
+    
     </div> 
     
        </div>
