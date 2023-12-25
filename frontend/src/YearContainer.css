@@ -6,3 +6,10 @@
     margin-top: 50px;
   }
   
+  .hover-effect {
+    transition: background-color 0.3s ease; /* Add a smooth transition effect */
+  }
+  
+  .hover-effect:hover {
+    background-color: red; /* Change background color to red on hover */
+  }
