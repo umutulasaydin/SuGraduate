@@ -46,4 +46,20 @@
     padding: 8px;
     text-align: center;
   }
+
+  .hover-effect {
+    transition: background-color 0.3s ease; /* Add a smooth transition effect */
+  }
+  
+  .hover-effect:hover {
+    background-color: rgb(152, 49, 49); /* Change background color to red on hover */
+  }
+  
+  .custom-dropdown {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    /* Add more styling as per your design */
+  }
   
