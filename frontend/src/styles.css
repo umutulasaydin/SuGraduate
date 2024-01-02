@@ -1,6 +1,6 @@
 .flex-container {
     
-    border-bottom: 1px solid #ccc; 
+    border-bottom: 1px solid rgb(16, 22, 29); 
     background-color: rgb(60, 85, 111);
   }
 
@@ -62,4 +62,39 @@
     background-color: #fff;
     /* Add more styling as per your design */
   }
+  
+  .styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    
+  }
+  
+  .styled-table th, .styled-table td {
+    border: 1px solid #36454F;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .styled-table th {
+    background-color: #36454F;
+    text-align: center;
+  }
+
+  .styled-table thead {
+    border-color: #B6D0E2;
+    background-color: #A9A9A9;
+    text-align: center;
+  }
+  
+  .styled-table tbody tr:nth-child(even) {
+    background-color: #A9A9A9;
+    text-align: center;
+  }
+  
+  .hover-effect {
+    cursor: pointer;
+  }
+  
+  /* Add more styles as needed */
   

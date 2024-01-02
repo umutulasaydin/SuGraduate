@@ -3,8 +3,10 @@
 // sonra ders seçtikten sonra printout kısmında o dersin prerequisitelerinin o course listesinde olup olmadığını kontrol etsin
 // eğer yoksa kırmızı renk varsa düz
 import React, {useEffect, useState} from 'react';
-import { Link } from 'react-router-dom';
-import { Galleria } from 'primereact/galleria';
+import { Link, useNavigate } from 'react-router-dom';
+
+import { DataScroller } from 'primereact/datascroller';
+        
         
 import styled from 'styled-components';
 import { Dropdown } from 'primereact/dropdown';
@@ -13,7 +15,7 @@ import './styles.css';
 
 let reqStructure = [];
 const YearContainer = () => {
-
+  const navigate = useNavigate();
   
   const [courses_201, setCourses_201] = useState([]);
   const [courses_301, setCourses_301] = useState([]);
@@ -83,31 +85,8 @@ const YearContainer = () => {
       });
 
       
-      //llSemesters(semesterStructure);
-
-      const unvalid = []
-      
-      //102
-      unvalid.push(checkPrerequisites("102",["101"],semesterStructure));
-      //201
-      unvalid.push(checkPrerequisites("201",["101","102"],semesterStructure));
-
-      //202
-      unvalid.push(checkPrerequisites("202",["101","102","201"],semesterStructure));
     
-      //301
-      unvalid.push(checkPrerequisites("301",["101","102","201","202"],semesterStructure));
-      
-      //302
-      unvalid.push(checkPrerequisites("302",["101","102","201","202","301"],semesterStructure));
-  
-      //401
-      unvalid.push(checkPrerequisites("401",["101","102","201","202","301","302"],semesterStructure));
-   
-      //402
-      unvalid.push(checkPrerequisites("402",["101","102","201","202","301","302", "401"],semesterStructure));
-
-      console.log("invalid courses", unvalid);
+    
       console.log("Semester Structure created:", semesterStructure);
       reqStructure = (requestStructure());
       console.log("Request Structure: ", reqStructure);
@@ -259,26 +238,9 @@ const YearContainer = () => {
   const [selectedYear, setSelectedYear] = useState([])
   const [submitButton, setSubmitButton] = useState(false);
 
-  const submitButtonCheck = () => {
-    let finalRequestStructure  = [];
-    createSemesterStructure();
-    finalRequestStructure["EntryYear"] = selectedYear;
-    finalRequestStructure["Major"] = selectedMajor;
-    finalRequestStructure["Courses"] = reqStructure;
-    //console.log("reqStructure: ", semesterStructure)
+  const NavigatesubmitButtonCheck = () => {
     
-    console.log("final: ",finalRequestStructure);
-    
-    if (selectedMajor.length !== 0 && selectedYear.length !== 0) {
-      setSubmitButton(true);
-      return true;
-      //postData();
-    } else {
-      console.log("Please select a major and entry year");
-
-      return false;
-    }
-
+    navigate('/tabmain');
   }
 
 
@@ -307,8 +269,55 @@ const YearContainer = () => {
     createSemesterStructure();
     finalRequestStructure["EntryYear"] = selectedYear;
     finalRequestStructure["Major"] = selectedMajor;
+    finalRequestStructure["Minors"]= [];
+    finalRequestStructure["DoubleMajors"]= [];
     finalRequestStructure["Courses"] = reqStructure;
     console.log("reqStructure: ", finalRequestStructure)
+    console.log("entry year len: ", finalRequestStructure["EntryYear"].length)
+    
+   { if ( (finalRequestStructure["EntryYear"].length > 0 ) && (finalRequestStructure["Major"].length > 0)){
+      console.log("entry year len: ", finalRequestStructure["Major"].length)
+      
+      const unvalid = []
+      
+      //102
+      unvalid.push(checkPrerequisites("102",["101"],semesterStructure));
+      //201
+      unvalid.push(checkPrerequisites("201",["101","102"],semesterStructure));
+
+      //202
+      unvalid.push(checkPrerequisites("202",["101","102","201"],semesterStructure));
+    
+      //301
+      unvalid.push(checkPrerequisites("301",["101","102","201","202"],semesterStructure));
+      
+      //302
+      unvalid.push(checkPrerequisites("302",["101","102","201","202","301"],semesterStructure));
+  
+      //401
+      unvalid.push(checkPrerequisites("401",["101","102","201","202","301","302"],semesterStructure));
+   
+      //402
+      unvalid.push(checkPrerequisites("402",["101","102","201","202","301","302", "401"],semesterStructure));
+
+      
+      if (unvalid.some(arr => arr.length > 0)){
+         console.log("preReq len: ", unvalid)
+         const nonEmptyArrays = unvalid
+            .filter(arr => arr.length > 0)
+            .map(arr => ({ arr }));
+
+         alert(`Prerequisities of these courses are invalid: \n${JSON.stringify(nonEmptyArrays)}`)
+      }else{
+        NavigatesubmitButtonCheck();
+      }
+     
+      
+    }else{
+      alert("Please enter a entry year and a major")
+    }
+  
+  }
     return finalRequestStructure;
 
   };
@@ -382,49 +391,43 @@ const YearContainer = () => {
       )}
        
         </div>
+          <button onClick={CreateRequestStructure} style={buttonStyle}>Submit
+          </button>
 
-        
-        
-          
-        
-          <Link to="/tabmain" style={linkStyle}>
-          <button onClick={postData} style={buttonStyle}>Submit</button>
-        </Link>
-        
-
-        
-        
-      
     </div>
       
+        
+
       <div className="year-container">
       <Container>
         <TableContainer>
-        <Table>
-        <h3>Freshman</h3>
+        <Table className="styled-table">
+        <h3 colSpan="2">Freshman</h3>
         <table>
-          <thead> 
-          <tr>
-            <td>
-            <select onChange={(event) => courseAdder(event, courses_101, setCourses_101, "101")}>
+          <thead > 
+            <td >
+              <div className="dropdown" style={{ color: 'white' , fontWeight: 'bold', display: 'center'}} > 
+            <select className="custom-dropdown" onChange={(event) => courseAdder(event, courses_101, setCourses_101, "101")}>
               {Object.keys(allCourses).map((course, index) => (
                 <option key={index} value={course}>
                   {course}
                 </option>
               ))}
             </select>
-            
+             </div>
             </td>
-            <td> <select onChange={(event) => courseAdder(event, courses_102, setCourses_102, "102")}>
+            <td> 
+            <div className="dropdown" style={{ color: 'white' , fontWeight: 'bold'}} > 
+            <select  className="custom-dropdown" onChange={(event) => courseAdder(event, courses_102, setCourses_102, "102")}>
               {Object.keys(allCourses).map((course, index) => (
                 <option key={index} value={course}>
                   {course}
                 </option>
               ))}
             </select>
-
+                </div>
             </td>
-          </tr>
+       
           </thead> 
         <tbody>{Array.from({ length: 7 }, (_, rowIndex) => (
               <tr key={rowIndex}>
@@ -578,7 +581,7 @@ const buttonStyle = {
 };
 
 const Container = styled.div`
-  background-color:  #cf7fdf;
+  background-color:  #10161d;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -591,8 +594,9 @@ const TableContainer = styled.div`
   margin-top: 10px; /* Add margin for spacing between tables */
 `
 const Table = styled.div`
-  background-color: #f5cffc;
+  background-color: #B6D0E2;
   border: 1px solid #ccc;
+  border-radius: 10px;
   padding: 10px;
   width: 48%;
   margin-top: 10px; /* Add margin for spacing between tables */
