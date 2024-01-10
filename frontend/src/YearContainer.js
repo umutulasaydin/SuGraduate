@@ -60,7 +60,7 @@ const YearContainer = () => {
       semesterStructure["402"] = [];
 
       courses_101.forEach((courseCode) => {
-        semesterStructure["101"] = [...semesterStructure["101"], allCourses[courseCode]];
+        semesterStructure["101"] = [...semesterStructure["101"], allCourses.Courses[courseCode]];
       });
       courses_102.forEach((courseCode) => {
         semesterStructure["102"] = [...semesterStructure["102"], allCourses[courseCode]];
@@ -218,7 +218,8 @@ const YearContainer = () => {
           const data = await response.json();
           
           getCourses(data.Courses);
-          console.log(allCourses);
+          console.log("All courses:", data);
+          console.log("courses:", data.Courses);
         } catch (error) {
           console.error('Error fetching data:', error);
         }
@@ -408,21 +409,21 @@ const YearContainer = () => {
             <td >
               <div className="dropdown" style={{ color: 'white' , fontWeight: 'bold', display: 'center'}} > 
             <select className="custom-dropdown" onChange={(event) => courseAdder(event, courses_101, setCourses_101, "101")}>
-              {Object.keys(allCourses).map((course, index) => (
-                <option key={index} value={course}>
-                  {course}
+              {allCourses.map((course, index) => (
+                <option key={index} value={course.course_code}>
+                  {course.course_code}
                 </option>
               ))}
             </select>
              </div>
             </td>
             <td> 
-            <div className="dropdown" style={{ color: 'white' , fontWeight: 'bold'}} > 
+            <div className="dropdown" style={{ color: 'white' , fontWeight: 'bold', display: 'center'}} > 
             <select  className="custom-dropdown" onChange={(event) => courseAdder(event, courses_102, setCourses_102, "102")}>
-              {Object.keys(allCourses).map((course, index) => (
-                <option key={index} value={course}>
-                  {course}
-                </option>
+              {allCourses.map((course, index) => (
+                   <option key={index} value={course.course_code}>
+                   {course.course_code}
+                 </option>
               ))}
             </select>
                 </div>
@@ -439,25 +440,28 @@ const YearContainer = () => {
       </table>
           </Table>
           
-          <Table>
-          <h3>Sophomore</h3>
+          <Table className="styled-table">
+        <h3 colSpan="2">Sophomore</h3>
         <table>
           <thead> 
           <tr>
             <td>
-            <select onChange={(event) => courseAdder(event, courses_201, setCourses_201, "201")}>
-              {Object.keys(allCourses).map((course, index) => (
-                <option key={index} value={course}>
-                  {course}
-                </option>
+            
+              <div className="dropdown" style={{ color: 'white' , fontWeight: 'bold', display: 'center'}} > 
+            <select className="custom-dropdown" onChange={(event) => courseAdder(event, courses_201, setCourses_201, "201")}>
+              {allCourses.map((course, index) => (
+                    <option key={index} value={course.course_code}>
+                    {course.course_code}
+                  </option>
               ))}
             </select>
+             </div>
             </td>
-            <td> <select onChange={(event) => courseAdder(event, courses_202, setCourses_202, "202")}>
-              {Object.keys(allCourses).map((course, index) => (
-                <option key={index} value={course}>
-                  {course}
-                </option>
+            <td> <select className="custom-dropdown" onChange={(event) => courseAdder(event, courses_202, setCourses_202, "202")}>
+              {allCourses.map((course, index) => (
+                    <option key={index} value={course.course_code}>
+                    {course.course_code}
+                  </option>
               ))}
             </select>
             </td>
@@ -486,25 +490,25 @@ const YearContainer = () => {
           </TableContainer>
 
         <TableContainer>
-        <Table>
-          <h3>Junior</h3>
+        <Table className="styled-table">
+        <h3 colSpan="2">Junior</h3>
         <table>
           <thead> 
           <tr>
             <td>
             <select onChange={(event) => courseAdder(event, courses_301, setCourses_301, "301")}>
-              {Object.keys(allCourses).map((course, index) => (
-                <option key={index} value={course}>
-                  {course}
-                </option>
+              {allCourses.map((course, index) => (
+                    <option key={index} value={course.course_code}>
+                    {course.course_code}
+                  </option>
               ))}
             </select>
             </td>
             <td> <select onChange={(event) => courseAdder(event, courses_302, setCourses_302, "302")}>
-              {Object.keys(allCourses).map((course, index) => (
-                <option key={index} value={course}>
-                  {course}
-                </option>
+              {allCourses.map((course, index) => (
+                    <option key={index} value={course.course_code}>
+                    {course.course_code}
+                  </option>
               ))}
             </select>
             </td>
@@ -520,25 +524,25 @@ const YearContainer = () => {
       </table>
           </Table>
 
-          <Table>
-          <h3>Senior</h3>
+          <Table className="styled-table">
+        <h3 colSpan="2">Senior</h3>
         <table>
           <thead> 
           <tr>
             <td>
             <select onChange={(event) => courseAdder(event, courses_401, setCourses_401, "401")}>
-              {Object.keys(allCourses).map((course, index) => (
-                <option key={index} value={course}>
-                  {course}
+              {allCourses.map((course, index) => (
+                  <option key={index} value={course.course_code}>
+                  {course.course_code}
                 </option>
               ))}
             </select>
             </td>
             <td> <select onChange={(event) => courseAdder(event, courses_402, setCourses_402, "402")}>
-              {Object.keys(allCourses).map((course, index) => (
-                <option key={index} value={course}>
-                  {course}
-                </option>
+              {allCourses.map((course, index) => (
+                   <option key={index} value={course.course_code}>
+                   {course.course_code}
+                 </option>
               ))}
             </select>
             </td>
