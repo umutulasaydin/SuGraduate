@@ -3,8 +3,10 @@
 // sonra ders seçtikten sonra printout kısmında o dersin prerequisitelerinin o course listesinde olup olmadığını kontrol etsin
 // eğer yoksa kırmızı renk varsa düz
 import React, {useEffect, useState} from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 
-import { Galleria } from 'primereact/galleria';
+import { DataScroller } from 'primereact/datascroller';
+        
         
 import styled from 'styled-components';
 import { Dropdown } from 'primereact/dropdown';
@@ -13,7 +15,7 @@ import './styles.css';
 
 let reqStructure = [];
 const YearContainer = () => {
-
+  const navigate = useNavigate();
   
   const [courses_201, setCourses_201] = useState([]);
   const [courses_301, setCourses_301] = useState([]);
@@ -58,7 +60,7 @@ const YearContainer = () => {
       semesterStructure["402"] = [];
 
       courses_101.forEach((courseCode) => {
-        semesterStructure["101"] = [...semesterStructure["101"], allCourses[courseCode]];
+        semesterStructure["101"] = [...semesterStructure["101"], allCourses.Courses[courseCode]];
       });
       courses_102.forEach((courseCode) => {
         semesterStructure["102"] = [...semesterStructure["102"], allCourses[courseCode]];
@@ -83,31 +85,8 @@ const YearContainer = () => {
       });
 
       
-      //llSemesters(semesterStructure);
-
-      const unvalid = []
-      
-      //102
-      unvalid.push(checkPrerequisites("102",["101"],semesterStructure));
-      //201
-      unvalid.push(checkPrerequisites("201",["101","102"],semesterStructure));
-
-      //202
-      unvalid.push(checkPrerequisites("202",["101","102","201"],semesterStructure));
     
-      //301
-      unvalid.push(checkPrerequisites("301",["101","102","201","202"],semesterStructure));
-      
-      //302
-      unvalid.push(checkPrerequisites("302",["101","102","201","202","301"],semesterStructure));
-  
-      //401
-      unvalid.push(checkPrerequisites("401",["101","102","201","202","301","302"],semesterStructure));
-   
-      //402
-      unvalid.push(checkPrerequisites("402",["101","102","201","202","301","302", "401"],semesterStructure));
-
-      console.log("invalid courses", unvalid);
+    
       console.log("Semester Structure created:", semesterStructure);
       reqStructure = (requestStructure());
       console.log("Request Structure: ", reqStructure);
@@ -190,6 +169,33 @@ const YearContainer = () => {
       return unvalidCourses;
     };
 
+    const postData = async () => {
+      const url = 'http://localhost:5001/Control';
+    
+      try {
+        const response = await fetch(url, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'text/plain', // Set the content type to JSON
+            // Add any additional headers if required
+          },
+          body: CreateRequestStructure(), // Replace with your actual data
+        });
+    
+        if (response.ok) {
+          console.log('Post request successful');
+          // Handle successful response here
+        } else {
+          console.error('Post request failed');
+          // Handle error response here
+        }
+      } catch (error) {
+        console.error('An error occurred:', error);
+        // Handle network or other errors here
+      }
+    };
+    
+
     
   
     useEffect(() => {
@@ -204,7 +210,7 @@ const YearContainer = () => {
 
             }, 
           });
-  
+   
           if (!response.ok) {
             throw new Error('Network response was not ok');
           }
@@ -212,7 +218,8 @@ const YearContainer = () => {
           const data = await response.json();
           
           getCourses(data.Courses);
-          console.log(allCourses);
+          console.log("All courses:", data);
+          console.log("courses:", data.Courses);
         } catch (error) {
           console.error('Error fetching data:', error);
         }
@@ -220,38 +227,208 @@ const YearContainer = () => {
   
 
     fetchData();
-    createSemesterStructure();
+    
   }, []);
 
+  const [showDoubleMajorDropdown, setShowDoubleMajorDropdown] = useState(false);
+  const [showMinorDropdown, setShowMinorDropdown] = useState(false);
+
+  const Major = {"Computer Science": "BSCS","Economy": "BAECON", "Electrical Engineering": "BSEE", "Industrial Engineering": "BSMS", "Management": "BAMAN", "Materials Science and Nano Engineering":"BSMAT" ,"Mechatronics Engineering": "BSME","Molecular Biology, Genetics and Bioengineering": "BSBIO", "Political Science and International Relations": "BAPSIR", "Psychology": "BAPSY","Visual Arts and Visual Communications Desing": "BAVACD"};
+  const [selectedMajor, setSelectedMajor] = useState([]);
+  const EntryYear = {"2017 Fall": "201701", "2017 Spring": "201702", "2018 Fall": "201801", "2018 Spring": "201802", "2019 Fall": "201901", "2019 Spring": "201902", "2020 Fall": "202001", "2020 Spring": "202002", "2021 Fall": "202101", "2021 Spring": "202102","2022 Fall": "202201","2022 Spring": "202202", "2023 Fall": "2012301","2023 Spring": "202302"};
+  const [selectedYear, setSelectedYear] = useState([])
+  const [submitButton, setSubmitButton] = useState(false);
+
+  const NavigatesubmitButtonCheck = () => {
+    
+    navigate('/tabmain');
+  }
+
+
+  const toggleDoubleMajorDropdown = () => {
+    setShowDoubleMajorDropdown(!showDoubleMajorDropdown);
+  };
+
+  const toggleMinorDropdown = () => {
+    setShowMinorDropdown(!showMinorDropdown);
+  };
+
+  const MajorSelection = (event) => {
+    const selectMajor = event.target.value;
+    setSelectedMajor(selectMajor);
+    console.log("Major:", selectedMajor );  
+  };
+
+  const EntryYearSelection = (event) => {
+  const entry = event.target.value;
+    setSelectedYear(entry);
+    console.log("Entry Year:", selectedYear); 
+  };
+
+  const CreateRequestStructure = () => {
+    let finalRequestStructure  = [];
+    createSemesterStructure();
+    finalRequestStructure["EntryYear"] = selectedYear;
+    finalRequestStructure["Major"] = selectedMajor;
+    finalRequestStructure["Minors"]= [];
+    finalRequestStructure["DoubleMajors"]= [];
+    finalRequestStructure["Courses"] = reqStructure;
+    console.log("reqStructure: ", finalRequestStructure)
+    console.log("entry year len: ", finalRequestStructure["EntryYear"].length)
+    
+   { if ( (finalRequestStructure["EntryYear"].length > 0 ) && (finalRequestStructure["Major"].length > 0)){
+      console.log("entry year len: ", finalRequestStructure["Major"].length)
+      
+      const unvalid = []
+      
+      //102
+      unvalid.push(checkPrerequisites("102",["101"],semesterStructure));
+      //201
+      unvalid.push(checkPrerequisites("201",["101","102"],semesterStructure));
+
+      //202
+      unvalid.push(checkPrerequisites("202",["101","102","201"],semesterStructure));
+    
+      //301
+      unvalid.push(checkPrerequisites("301",["101","102","201","202"],semesterStructure));
+      
+      //302
+      unvalid.push(checkPrerequisites("302",["101","102","201","202","301"],semesterStructure));
+  
+      //401
+      unvalid.push(checkPrerequisites("401",["101","102","201","202","301","302"],semesterStructure));
+   
+      //402
+      unvalid.push(checkPrerequisites("402",["101","102","201","202","301","302", "401"],semesterStructure));
+
+      
+      if (unvalid.some(arr => arr.length > 0)){
+         console.log("preReq len: ", unvalid)
+         const nonEmptyArrays = unvalid
+            .filter(arr => arr.length > 0)
+            .map(arr => ({ arr }));
+
+         alert(`Prerequisities of these courses are invalid: \n${JSON.stringify(nonEmptyArrays)}`)
+      }else{
+        NavigatesubmitButtonCheck();
+      }
+     
+      
+    }else{
+      alert("Please enter a entry year and a major")
+    }
+  
+  }
+    return finalRequestStructure;
+
+  };
+
+
     return (
+      <div>
+    <div className="info-bar">
+      <div className="dropdown">
+        <label htmlFor="entry-year" style={{ color: 'white' , fontWeight: 'bold'}}>EntryYear:</label>
+
+        <select onChange={(event) => EntryYearSelection(event)} className="custom-dropdown">
+              {Object.keys(EntryYear).map((course, index) => (
+                <option key={index} value={course}>
+                  {course}
+                </option>
+              ))}
+              
+        </select>
+
+      </div>
+      <div className="dropdown">
+        <label htmlFor="major" style={{ color: 'white' , fontWeight: 'bold'}} >Major:</label>
+        <select onChange={(event) => MajorSelection(event)} className="custom-dropdown">
+              {Object.keys(Major).map((course, index) => (
+                <option key={index} value={course}>
+                  {course}
+                </option>
+              ))}
+        </select>
+      </div>
+      <div className="dropdown" style={{ color: 'white' , fontWeight: 'bold'}}> Double Major:   
+      {showDoubleMajorDropdown ? (
+        // Render only when the dropdown button is shown
+        <select onChange={(event) => MajorSelection(event)} className="custom-dropdown">
+          {Object.keys(Major).map((course, index) => (
+            <option key={index} value={course}>
+              {course}
+            </option>
+          ))}
+        </select>
+      ) : (
+        // Render only when the dropdown button is NOT shown
+        <>
+          
+          <button className={`add-button ${showDoubleMajorDropdown ? 'active' : ''}`} onClick={toggleDoubleMajorDropdown}>
+            +
+          </button>
+        </>
+      )}
+      </div> 
+      <div className="dropdown" style={{ color: 'white' , fontWeight: 'bold'}}> Minor
+      {showMinorDropdown ? (
+        // Render only when the dropdown button is shown
+        
+        <select onChange={(event) => MajorSelection(event)} className="custom-dropdown">
+          {Object.keys(Major).map((course, index) => (
+            <option key={index} value={course}>
+              {course}
+            </option>
+          ))}
+        </select>
+      ) : (
+        // Render only when the dropdown button is NOT shown
+        <>
+          
+          <button className={`add-button ${showMinorDropdown ? 'active' : ''}`} onClick={toggleMinorDropdown}>
+            +
+          </button>
+        </>
+      )}
+       
+        </div>
+          <button onClick={CreateRequestStructure} style={buttonStyle}>Submit
+          </button>
+
+    </div>
+      
+        
+
       <div className="year-container">
       <Container>
         <TableContainer>
-        <Table>
-        <h3>Freshman</h3>
+        <Table className="styled-table">
+        <h3 colSpan="2">Freshman</h3>
         <table>
-          <thead> 
-          <tr>
-            <td>
-            <select onChange={(event) => courseAdder(event, courses_101, setCourses_101, "101")}>
-              {Object.keys(allCourses).map((course, index) => (
-                <option key={index} value={course}>
-                  {course}
+          <thead > 
+            <td >
+              <div className="dropdown" style={{ color: 'white' , fontWeight: 'bold', display: 'center'}} > 
+            <select className="custom-dropdown" onChange={(event) => courseAdder(event, courses_101, setCourses_101, "101")}>
+              {allCourses.map((course, index) => (
+                <option key={index} value={course.course_code}>
+                  {course.course_code}
                 </option>
               ))}
             </select>
-            
+             </div>
             </td>
-            <td> <select onChange={(event) => courseAdder(event, courses_102, setCourses_102, "102")}>
-              {Object.keys(allCourses).map((course, index) => (
-                <option key={index} value={course}>
-                  {course}
-                </option>
+            <td> 
+            <div className="dropdown" style={{ color: 'white' , fontWeight: 'bold', display: 'center'}} > 
+            <select  className="custom-dropdown" onChange={(event) => courseAdder(event, courses_102, setCourses_102, "102")}>
+              {allCourses.map((course, index) => (
+                   <option key={index} value={course.course_code}>
+                   {course.course_code}
+                 </option>
               ))}
             </select>
-
+                </div>
             </td>
-          </tr>
+       
           </thead> 
         <tbody>{Array.from({ length: 7 }, (_, rowIndex) => (
               <tr key={rowIndex}>
@@ -263,25 +440,28 @@ const YearContainer = () => {
       </table>
           </Table>
           
-          <Table>
-          <h3>Sophomore</h3>
+          <Table className="styled-table">
+        <h3 colSpan="2">Sophomore</h3>
         <table>
           <thead> 
           <tr>
             <td>
-            <select onChange={(event) => courseAdder(event, courses_201, setCourses_201, "201")}>
-              {Object.keys(allCourses).map((course, index) => (
-                <option key={index} value={course}>
-                  {course}
-                </option>
+            
+              <div className="dropdown" style={{ color: 'white' , fontWeight: 'bold', display: 'center'}} > 
+            <select className="custom-dropdown" onChange={(event) => courseAdder(event, courses_201, setCourses_201, "201")}>
+              {allCourses.map((course, index) => (
+                    <option key={index} value={course.course_code}>
+                    {course.course_code}
+                  </option>
               ))}
             </select>
+             </div>
             </td>
-            <td> <select onChange={(event) => courseAdder(event, courses_202, setCourses_202, "202")}>
-              {Object.keys(allCourses).map((course, index) => (
-                <option key={index} value={course}>
-                  {course}
-                </option>
+            <td> <select className="custom-dropdown" onChange={(event) => courseAdder(event, courses_202, setCourses_202, "202")}>
+              {allCourses.map((course, index) => (
+                    <option key={index} value={course.course_code}>
+                    {course.course_code}
+                  </option>
               ))}
             </select>
             </td>
@@ -310,25 +490,25 @@ const YearContainer = () => {
           </TableContainer>
 
         <TableContainer>
-        <Table>
-          <h3>Junior</h3>
+        <Table className="styled-table">
+        <h3 colSpan="2">Junior</h3>
         <table>
           <thead> 
           <tr>
             <td>
             <select onChange={(event) => courseAdder(event, courses_301, setCourses_301, "301")}>
-              {Object.keys(allCourses).map((course, index) => (
-                <option key={index} value={course}>
-                  {course}
-                </option>
+              {allCourses.map((course, index) => (
+                    <option key={index} value={course.course_code}>
+                    {course.course_code}
+                  </option>
               ))}
             </select>
             </td>
             <td> <select onChange={(event) => courseAdder(event, courses_302, setCourses_302, "302")}>
-              {Object.keys(allCourses).map((course, index) => (
-                <option key={index} value={course}>
-                  {course}
-                </option>
+              {allCourses.map((course, index) => (
+                    <option key={index} value={course.course_code}>
+                    {course.course_code}
+                  </option>
               ))}
             </select>
             </td>
@@ -344,25 +524,25 @@ const YearContainer = () => {
       </table>
           </Table>
 
-          <Table>
-          <h3>Senior</h3>
+          <Table className="styled-table">
+        <h3 colSpan="2">Senior</h3>
         <table>
           <thead> 
           <tr>
             <td>
             <select onChange={(event) => courseAdder(event, courses_401, setCourses_401, "401")}>
-              {Object.keys(allCourses).map((course, index) => (
-                <option key={index} value={course}>
-                  {course}
+              {allCourses.map((course, index) => (
+                  <option key={index} value={course.course_code}>
+                  {course.course_code}
                 </option>
               ))}
             </select>
             </td>
             <td> <select onChange={(event) => courseAdder(event, courses_402, setCourses_402, "402")}>
-              {Object.keys(allCourses).map((course, index) => (
-                <option key={index} value={course}>
-                  {course}
-                </option>
+              {allCourses.map((course, index) => (
+                   <option key={index} value={course.course_code}>
+                   {course.course_code}
+                 </option>
               ))}
             </select>
             </td>
@@ -380,7 +560,7 @@ const YearContainer = () => {
         </TableContainer>
       </Container>
       </div>
-      
+      </div>
     );
 
   
@@ -391,10 +571,21 @@ const YearContainer = () => {
 
 export default YearContainer;
 
+const linkStyle = {
+  textDecoration: 'none', // Remove default underline
+};
 
+const buttonStyle = {
+  backgroundColor: '#4CAF50', // Green background color
+  color: 'white', // White text color
+  padding: '10px 20px', // Padding for better appearance
+  border: 'none', // Remove border
+  borderRadius: '5px', // Add rounded corners
+  cursor: 'pointer', // Add pointer cursor on hover
+};
 
 const Container = styled.div`
-  background-color:  #cf7fdf;
+  background-color:  #10161d;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -407,8 +598,9 @@ const TableContainer = styled.div`
   margin-top: 10px; /* Add margin for spacing between tables */
 `
 const Table = styled.div`
-  background-color: #f5cffc;
+  background-color: #B6D0E2;
   border: 1px solid #ccc;
+  border-radius: 10px;
   padding: 10px;
   width: 48%;
   margin-top: 10px; /* Add margin for spacing between tables */

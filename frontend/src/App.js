@@ -11,7 +11,7 @@ function Main() {
     <div >
    
       <Header/>
-      <Infobar/>
+    
       <YearContainer/>
       
     </div>
