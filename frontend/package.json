@@ -1,8 +1,0 @@
-{
-  "dependencies": {
-    "@material/tabs": "^2.3.0",
-    "@mui/material": "^5.14.14",
-    "primereact": "^10.0.7",
-    "react-headless-tabs": "^6.0.4"
-  }
-}

@@ -1,5 +1,4 @@
-﻿using GradApp.Entities.Requirements;
-using MongoDB.Bson;
+﻿using MongoDB.Bson;
 
 namespace GradApp.Entities.Courses
 {
