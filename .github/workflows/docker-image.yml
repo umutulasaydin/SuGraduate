@@ -16,7 +16,7 @@ jobs:
     - uses: actions/checkout@v3
     # Build and run the React app
     - name: Login Docker
-      run: docker login
+      run: docker login --username umutulas62 --password Qkluya1ba
     - name: Build the Docker image for React app
       run: docker pull umutulas62/gradappui:gradappui
     - name: Run the Docker container for React app
