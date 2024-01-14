@@ -15,6 +15,8 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     # Build and run the React app
+    - name: Login Docker
+      run: docker login
     - name: Build the Docker image for React app
       run: docker build -t umutulas62/gradappui:gradappui -f frontend/Dockerfile .
     - name: Run the Docker container for React app
