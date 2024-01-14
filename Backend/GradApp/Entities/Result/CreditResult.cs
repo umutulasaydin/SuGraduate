@@ -35,11 +35,11 @@ namespace GradApp.Entities.Result
             {
                 Taken_Course++;
             }
-            else if (SU_Credit != null)
+            if (SU_Credit != null)
             {
                 Taken_SU_Credit += course.SU_Credit;
             }
-            else if (AKTS_Credit != null)
+            if (AKTS_Credit != null)
             {
                 Taken_AKTS_Credit += course.AKTS_Credit;
             }

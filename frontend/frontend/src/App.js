@@ -1,23 +1,29 @@
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom"
+import { PrimeReactProvider } from 'primereact/api';
 
-import './App.css';
-import {Routes, Route, NavLink} from 'react-router-dom';
-import Header from './Header';
-import Infobar from './Infobar';
-import YearContainer from './YearContainer';
-import TabMain from './TabMain';
-
-function Main() {
+import Main from "./MainPage/Main";
+import ResultPage from "./ResultPage/ResultPage";
+function App() {
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Main/>,
+    },
+    {
+      path: "/result",
+      element: <ResultPage />,
+    },
+  ])
+  
   return (
-    <div >
+    <PrimeReactProvider>
+       <RouterProvider router={router}/>
+    </PrimeReactProvider>
    
-      <Header/>
-    
-      <YearContainer/>
-      
-    </div>
-    
   );
 }
 
-export default Main;
-
+export default App;

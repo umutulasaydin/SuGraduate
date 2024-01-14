@@ -26,12 +26,12 @@ namespace GradApp.Controllers
         }
 
         [HttpGet("Courses")]
-        public async Task<CourseList> Get()
+        public async Task<List<Course>> Get()
         {
             IMongoCollection<CourseList> collection = database.GetCollection<CourseList>("Requirements");
             FilterDefinition<CourseList> filter = Builders<CourseList>.Filter.Exists("Courses");
             CourseList result = await collection.Find(filter).FirstAsync();
-            return result;
+            return result.Courses;
         }
 
 
@@ -43,16 +43,24 @@ namespace GradApp.Controllers
             IMongoCollection<ProgramRequirement> collection = database.GetCollection<ProgramRequirement>("Requirements");
             foreach (string item in request.Programs)
             {
-                string filter_name = item.Substring(2) + "_" + request.EntryYear;
-                FilterDefinition<ProgramRequirement> filter = Builders<ProgramRequirement>.Filter.Eq("ProgramCode", filter_name);
-                ProgramRequirement requirements = await collection.Find(filter).FirstAsync();
-                Result resultProgram = new Result();
-                resultProgram.Program = item;
-                if (item.Substring(0, 2) == "BS")
+                try
                 {
-                    resultProgram.CreditResults = calculations.CalculateFENS(requirements, request.Courses);
+                    string filter_name = item.Substring(2) + "_" + request.EntryYear;
+                    FilterDefinition<ProgramRequirement> filter = Builders<ProgramRequirement>.Filter.Eq("ProgramCode", filter_name);
+                    ProgramRequirement requirements = await collection.Find(filter).FirstAsync();
+                    Result resultProgram = new Result();
+                    resultProgram.Program = item;
+                    if (item.Substring(0, 2) == "BS")
+                    {
+                        resultProgram.CreditResults = calculations.CalculateFENS(requirements, request.Courses);
+                    }
+                    result.results.Add(resultProgram);
                 }
-                result.results.Add(resultProgram);
+                catch (Exception e)
+                {
+                    Console.WriteLine(e);
+                }
+                
             }
             return result;
 

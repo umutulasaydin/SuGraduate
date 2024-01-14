@@ -3,7 +3,7 @@ FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 WORKDIR /src
 
 # Copy the CSPROJ file and restore any dependencies (via NUGET)
-COPY ["GradApp/GradApp.csproj", "GradApp/"]
+COPY ["Backend/GradApp/GradApp.csproj", "GradApp/"]
 RUN dotnet restore "GradApp/GradApp.csproj"
 
 # Copy the project files and build the release
