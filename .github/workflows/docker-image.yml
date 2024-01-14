@@ -18,7 +18,7 @@ jobs:
     - name: Login Docker
       run: docker login
     - name: Build the Docker image for React app
-      run: docker build -t umutulas62/gradappui:gradappui -f frontend/Dockerfile .
+      run: docker pull umutulas62/gradappui:gradappui
     - name: Run the Docker container for React app
       run: docker run -d -p 3000:80 gradappui:gradappui
 
