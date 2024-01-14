@@ -11,7 +11,12 @@ import { useNavigate } from "react-router-dom";
 import PickListItem from "./PickListItem";
 import InfoBox from "../Shared/InfoBox";
 import { Majors, EntryYear } from "../Shared/consts";
+import { useMediaQuery } from 'react-responsive';
 function Body() {
+  //Responsive
+  const isDesktopOrLaptop = useMediaQuery({ query: '(min-width: 720px)' })
+  const isTabletOrMobile = useMediaQuery({ query: '(max-width: 720px)' })
+  
   const navigate = useNavigate();
   //notifications
   const toasts = useRef(null);
@@ -87,16 +92,43 @@ function Body() {
     },
     {
       name: "Expert",
-      semester: []
+      semester: [
+        {
+          name: "Semester 1",
+          courses: useState([])
+        },
+        {
+          name: "Semester 2",
+          courses: useState([])
+        },
+        {
+          name: "Semester 3",
+          courses: useState([])
+        },
+        {
+          name: "Semester 4",
+          courses: useState([])
+        },
+        {
+          name: "Semester 5",
+          courses: useState([])
+        },
+        {
+          name: "Semester 6",
+          courses: useState([])
+        }
+
+      ]
     }
-  ]
+  ];
   const [courses, setCourses] = useState([]);
+
   //Get data
   useEffect(() => {
 
     const getData = async () => {
       try {
-        const response = await fetch("https://localhost:5001/Courses")
+        const response = await fetch("http://localhost:5001/Courses")
         if (response.ok) {
           const data = await response.json();
           setCourses(data);
@@ -137,22 +169,8 @@ function Body() {
 
   const [selectedMajor, setSelectedMajor] = useState(null);
   const [selectDoubleMajor, setSelectedDoubleMajor] = useState(null)
-  const [isDoubleMajor, setDoubleMajor] = useState(false)
-  function DoubleMajorExist() {
-    if (isDoubleMajor) {
-      return (
-        <div className="flex justify-content-between">
-          <Dropdown value={selectDoubleMajor} onChange={(e) => setSelectedDoubleMajor(e.value)} options={Majors} optionLabel="name"
-            placeholder="Select a Double Major" showClear className="w-10" />
-          <Button icon="pi pi-times" onClick={() => setDoubleMajor(false)} size="small" className="w-2" />
-        </div>
-      );
-    }
-    else {
-      return (
-        <Button label="Add Double Major" icon="pi pi-plus" onClick={() => setDoubleMajor(true)} />)
-    }
-  }
+
+  
  
   const [selectedYear, setSelectedYear] = useState(null)
 
@@ -173,7 +191,7 @@ function Body() {
         }
       }
       const postData = async () => {
-        const url = 'https://localhost:5001/Control';
+        const url = 'http://localhost:5001/Control';
         var body = {
           "Courses": allLessons,
           "EntryYear": selectedYear.code,
@@ -214,18 +232,16 @@ function Body() {
   return (
     <div className="bg-cyan-700 h-full">
       <Toast ref={toasts} />
-      <div className="bg-cyan-700">
-        <div className="p-5 flex justify-content-between">
+      <div className={"bg-cyan-700"}>
+        <div className={"p-5 flex " + (isDesktopOrLaptop && "justify-content-between ") + (isTabletOrMobile && " flex-column align-items-center gap-3")}>
           <Dropdown value={selectedMajor} onChange={(e) => setSelectedMajor(e.value)} options={Majors} optionLabel="name"
-            placeholder="Select a Major" showClear className="w-3" />
-
-          <div className="w-4 flex justify-content-center ">
-            {DoubleMajorExist()}
+            placeholder="Select a Major" showClear className={(isDesktopOrLaptop && "w-3 ") + (isTabletOrMobile && " w-full")} />
+          <div className={"flex justify-content-center "+ (isDesktopOrLaptop && " w-4 ") + (isTabletOrMobile && " w-full")}>
+          <Dropdown value={selectDoubleMajor} onChange={(e) => setSelectedDoubleMajor(e.value)} options={Majors} optionLabel="name"
+            placeholder="Select a Double Major" showClear className={(isDesktopOrLaptop && "w-10 ") + (isTabletOrMobile && " w-full")} />
           </div>
-
-
           <Dropdown value={selectedYear} onChange={(e) => setSelectedYear(e.value)} options={EntryYear} optionLabel="name"
-            placeholder="Select an Entry Year" showClear className="w-3" />
+            placeholder="Select an Entry Year" showClear className={(isDesktopOrLaptop && "w-3 ") + (isTabletOrMobile && " w-full")}/>
         </div>
 
       </div>
@@ -235,9 +251,9 @@ function Body() {
           {Years()}
         </Accordion>
       </div>
-      <div className="flex justify-content-between bg-cyan-700 w-full px-3">
-        <InfoBox className="" />
-        <Button onClick={(Submit)} label="Submit" className="my-4 h-3rem" />
+      <div className={"flex bg-cyan-700 w-full px-3" + (isDesktopOrLaptop && " justify-content-between my-3 ") + (isTabletOrMobile && " flex-column align-items-center gap-3 w-full")}>
+        {isDesktopOrLaptop && <InfoBox />}
+        <Button onClick={(Submit)} label="Submit" className={(isDesktopOrLaptop && " h-3rem my-3 ") + (isTabletOrMobile && " w-full m-5")} />
 
 
       </div>

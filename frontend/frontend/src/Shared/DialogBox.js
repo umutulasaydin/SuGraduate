@@ -7,7 +7,12 @@ import { useRef } from 'react';
 import { Controller, useForm } from 'react-hook-form';
 import { Toast } from 'primereact/toast';
 import emailjs from '@emailjs/browser';
+import { useMediaQuery } from 'react-responsive';
+
 function DialogBox(props) {
+    //Responsive
+    const isDesktopOrLaptop = useMediaQuery({ query: '(min-width: 500px)' })
+    const isTabletOrMobile = useMediaQuery({ query: '(max-width: 500px)' })
     const toast = useRef(null);
     const topics = ["Suggestion", "Bug", "Question"]
     const defaultValues = { description: '', name: '', topic: '', mail: '' };
@@ -21,12 +26,12 @@ function DialogBox(props) {
     };
 
     const onSubmit = (data) => {
-        show(); 
+        show();
         emailjs.send('service_91bdbxl', 'template_59v5wb8', data, 'ODvTPArmdr8L_mZTv')
         form.reset();
     };
     return (
-        <Dialog header="Contact us" visible={props.visible} style={{ width: '50vw' }} onHide={() => props.setVisible(false)} className=''>
+        <Dialog header="Contact us" visible={props.visible}  onHide={() => props.setVisible(false)} className={(isDesktopOrLaptop && " w-full") + (isTabletOrMobile && " w-full mx-1")}>
             <form onSubmit={form.handleSubmit(onSubmit)} className='flex flex-column gap-3' >
                 <Toast ref={toast} />
                 <Controller

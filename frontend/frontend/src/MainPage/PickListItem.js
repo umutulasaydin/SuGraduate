@@ -1,12 +1,14 @@
 import { PickList } from "primereact/picklist";
 import { Messages } from "primereact/messages";
 import { useEffect, useRef } from "react";
+import { useMediaQuery } from 'react-responsive'
 function PickListItem(props) {
   const msgs = useRef(null);
   var warnings = []
   var total_credit = 0;
   var allLessons = []
-
+  const isDesktopOrLaptop = useMediaQuery({ query: '(min-width: 400px)'})
+  const isTabletOrMobile = useMediaQuery({ query: '(max-width: 400px)' })
   
   function checkRequirement(courseInfo, courseList) {
     if (courseInfo.condition.general.length !== 0) {
@@ -72,14 +74,15 @@ function PickListItem(props) {
 
   const itemTemplate = (item) => {
     return (
-      <div className="flex flex-wrap p-2 align-items-center gap-3">
+      <div className="flex flex-wrap p-2 align-items-center gap-3 border-1 border-round">
         <div className="flex-1 flex flex-column gap-2">
-          <span className="font-bold">{item.course_name}</span>
+          <span className="font-bold text-xs">{item.course_name}</span>
           <div className="flex align-items-center gap-2">
-            <span>{item.course_code}</span>
+            <span className="text-xs">{item.course_code}</span>
           </div>
         </div>
-        <span className="font-bold text-900">{item.credit} Credit</span>
+        {isDesktopOrLaptop && <span className="font-bold text-xs">{item.credit} Credit</span>}
+        {isTabletOrMobile && <div className="font-bold text-xs">{item.credit} Credit</div>}
       </div>
     );
   };
@@ -90,7 +93,6 @@ function PickListItem(props) {
     warnings = []
     msgs.current.clear();
     allLessons = [];
-
     for (let i = 0; i < props.selectedCourses.length; i++) {
       total_credit += props.selectedCourses[i].credit;
     }
