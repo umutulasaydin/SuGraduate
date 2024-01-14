@@ -14,7 +14,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Build the Docker image
       # Build and run the ASP.NET Core app
     - name: Build the Docker image for ASP.NET Core app
       run: docker build -t umutulas62/gradapp:gradapp -f /Backend/Dockerfile .
