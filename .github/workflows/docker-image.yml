@@ -18,7 +18,7 @@ jobs:
     - name: Build the Docker image for React app
       run: docker build -t umutulas62/gradappui:gradappui -f frontend/Dockerfile .
     - name: Run the Docker container for React app
-      run: docker run -d -p 3000:80 reactapp
+      run: docker run -d -p 3000:80 gradappui:gradappui
 
       # Build and run the ASP.NET Core app
     - name: Build the Docker image for ASP.NET Core app
