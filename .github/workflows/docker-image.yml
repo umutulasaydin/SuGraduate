@@ -14,14 +14,16 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+    # Build and run the React app
+    - name: Build the Docker image for React app
+      run: docker build -t umutulas62/gradappui:gradappui -f Frontend/Dockerfile .
+    - name: Run the Docker container for React app
+      run: docker run -d -p 3000:80 reactapp
+
       # Build and run the ASP.NET Core app
     - name: Build the Docker image for ASP.NET Core app
       run: docker build -t umutulas62/gradapp:gradapp -f Backend/Dockerfile .
     - name: Run the Docker container for ASP.NET Core app
       run: docker run -d -p 5001:80 gradapp
 
-    # Build and run the React app
-    - name: Build the Docker image for React app
-      run: docker build -t umutulas62/gradappui:gradappui -f Frontend/Dockerfile .
-    - name: Run the Docker container for React app
-      run: docker run -d -p 3000:80 reactapp
+    
