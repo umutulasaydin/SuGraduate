@@ -12,7 +12,7 @@ function ResultCard(props) {
                 <span>{item.faculty}</span>
               </div>
             </div>
-            <span className="font-bold text-900">{item.sU_Credit} SU Credit</span>
+            {(props.result.area !== "Basic Science" && props.result.area !== "Engineering") && <span className="font-bold text-900">{item.sU_Credit} SU Credit</span>}
             <span className="font-bold text-900">{item.aktS_Credit} AKTS Credit</span>
           </div>
         );
@@ -45,8 +45,8 @@ function ResultCard(props) {
             {
               props.result.area !== "Total" &&
               <div>
-              {props.result.takenCourses.length !== 0 && <DataScroller value={props.result.takenCourses} itemTemplate={itemTemplate} header="Taken Courses" rows={20} buffer={0.4}/>}
-              {props.result.suggestedCourses.length !== 0 &&  <DataScroller value={props.result.suggestedCourses} itemTemplate={itemTemplate} header="Suggested Courses" rows={20} buffer={0.4}/>}
+              {props.result.takenCourses.length !== 0 && <DataScroller value={props.result.takenCourses} itemTemplate={itemTemplate} header="Taken Courses" rows={20} inline scrollHeight="500px"/>}
+              {props.result.suggestedCourses.length !== 0 &&  <DataScroller value={props.result.suggestedCourses} itemTemplate={itemTemplate} rows={props.result.suggestedCourses.length} header="Suggested Courses" inline scrollHeight="500px"/>}
              </div> 
             }
             
