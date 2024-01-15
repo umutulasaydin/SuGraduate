@@ -1,0 +1,256 @@
+C:/Users/umut.ulas/source/repos/GradApp/bin/Debug/net7.0/appsettings.Development.json
+C:/Users/umut.ulas/source/repos/GradApp/bin/Debug/net7.0/appsettings.json
+C:/Users/umut.ulas/source/repos/GradApp/bin/Debug/net7.0/GradApp.exe
+C:/Users/umut.ulas/source/repos/GradApp/bin/Debug/net7.0/GradApp.deps.json
+C:/Users/umut.ulas/source/repos/GradApp/bin/Debug/net7.0/GradApp.runtimeconfig.json
+C:/Users/umut.ulas/source/repos/GradApp/bin/Debug/net7.0/GradApp.dll
+C:/Users/umut.ulas/source/repos/GradApp/bin/Debug/net7.0/GradApp.pdb
+C:/Users/umut.ulas/source/repos/GradApp/bin/Debug/net7.0/AWSSDK.Core.dll
+C:/Users/umut.ulas/source/repos/GradApp/bin/Debug/net7.0/AWSSDK.SecurityToken.dll
+C:/Users/umut.ulas/source/repos/GradApp/bin/Debug/net7.0/DnsClient.dll
+C:/Users/umut.ulas/source/repos/GradApp/bin/Debug/net7.0/Microsoft.AspNetCore.OpenApi.dll
+C:/Users/umut.ulas/source/repos/GradApp/bin/Debug/net7.0/Microsoft.OpenApi.dll
+C:/Users/umut.ulas/source/repos/GradApp/bin/Debug/net7.0/MongoDB.Bson.dll
+C:/Users/umut.ulas/source/repos/GradApp/bin/Debug/net7.0/MongoDB.Driver.dll
+C:/Users/umut.ulas/source/repos/GradApp/bin/Debug/net7.0/MongoDB.Driver.Core.dll
+C:/Users/umut.ulas/source/repos/GradApp/bin/Debug/net7.0/MongoDB.Libmongocrypt.dll
+C:/Users/umut.ulas/source/repos/GradApp/bin/Debug/net7.0/SharpCompress.dll
+C:/Users/umut.ulas/source/repos/GradApp/bin/Debug/net7.0/Snappier.dll
+C:/Users/umut.ulas/source/repos/GradApp/bin/Debug/net7.0/Swashbuckle.AspNetCore.Swagger.dll
+C:/Users/umut.ulas/source/repos/GradApp/bin/Debug/net7.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+C:/Users/umut.ulas/source/repos/GradApp/bin/Debug/net7.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+C:/Users/umut.ulas/source/repos/GradApp/bin/Debug/net7.0/ZstdSharp.dll
+C:/Users/umut.ulas/source/repos/GradApp/bin/Debug/net7.0/runtimes/linux/native/libmongocrypt.so
+C:/Users/umut.ulas/source/repos/GradApp/bin/Debug/net7.0/runtimes/osx/native/libmongocrypt.dylib
+C:/Users/umut.ulas/source/repos/GradApp/bin/Debug/net7.0/runtimes/win/native/mongocrypt.dll
+C:/Users/umut.ulas/source/repos/GradApp/obj/Debug/net7.0/GradApp.csproj.AssemblyReference.cache
+C:/Users/umut.ulas/source/repos/GradApp/obj/Debug/net7.0/GradApp.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/umut.ulas/source/repos/GradApp/obj/Debug/net7.0/GradApp.AssemblyInfoInputs.cache
+C:/Users/umut.ulas/source/repos/GradApp/obj/Debug/net7.0/GradApp.AssemblyInfo.cs
+C:/Users/umut.ulas/source/repos/GradApp/obj/Debug/net7.0/GradApp.csproj.CoreCompileInputs.cache
+C:/Users/umut.ulas/source/repos/GradApp/obj/Debug/net7.0/GradApp.MvcApplicationPartsAssemblyInfo.cs
+C:/Users/umut.ulas/source/repos/GradApp/obj/Debug/net7.0/GradApp.MvcApplicationPartsAssemblyInfo.cache
+C:/Users/umut.ulas/source/repos/GradApp/obj/Debug/net7.0/staticwebassets.build.json
+C:/Users/umut.ulas/source/repos/GradApp/obj/Debug/net7.0/staticwebassets.development.json
+C:/Users/umut.ulas/source/repos/GradApp/obj/Debug/net7.0/staticwebassets/msbuild.GradApp.Microsoft.AspNetCore.StaticWebAssets.props
+C:/Users/umut.ulas/source/repos/GradApp/obj/Debug/net7.0/staticwebassets/msbuild.build.GradApp.props
+C:/Users/umut.ulas/source/repos/GradApp/obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.GradApp.props
+C:/Users/umut.ulas/source/repos/GradApp/obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.GradApp.props
+C:/Users/umut.ulas/source/repos/GradApp/obj/Debug/net7.0/staticwebassets.pack.json
+C:/Users/umut.ulas/source/repos/GradApp/obj/Debug/net7.0/scopedcss/bundle/GradApp.styles.css
+C:/Users/umut.ulas/source/repos/GradApp/obj/Debug/net7.0/GradApp.csproj.CopyComplete
+C:/Users/umut.ulas/source/repos/GradApp/obj/Debug/net7.0/GradApp.dll
+C:/Users/umut.ulas/source/repos/GradApp/obj/Debug/net7.0/refint/GradApp.dll
+C:/Users/umut.ulas/source/repos/GradApp/obj/Debug/net7.0/GradApp.pdb
+C:/Users/umut.ulas/source/repos/GradApp/obj/Debug/net7.0/GradApp.genruntimeconfig.cache
+C:/Users/umut.ulas/source/repos/GradApp/obj/Debug/net7.0/ref/GradApp.dll
+C:/Users/umut.ulas/source/repos/GradApp/bin/Debug/net7.0/Newtonsoft.Json.dll
+/Users/umut/Downloads/GradApp/bin/Debug/net7.0/appsettings.Development.json
+/Users/umut/Downloads/GradApp/bin/Debug/net7.0/appsettings.json
+/Users/umut/Downloads/GradApp/bin/Debug/net7.0/publish/web.config
+/Users/umut/Downloads/GradApp/bin/Debug/net7.0/publish/appsettings.Development.json
+/Users/umut/Downloads/GradApp/bin/Debug/net7.0/publish/appsettings.json
+/Users/umut/Downloads/GradApp/bin/Debug/net7.0/publish/GradApp.deps.json
+/Users/umut/Downloads/GradApp/bin/Debug/net7.0/publish/GradApp.runtimeconfig.json
+/Users/umut/Downloads/GradApp/bin/Debug/net7.0/GradApp
+/Users/umut/Downloads/GradApp/bin/Debug/net7.0/GradApp.deps.json
+/Users/umut/Downloads/GradApp/bin/Debug/net7.0/GradApp.runtimeconfig.json
+/Users/umut/Downloads/GradApp/bin/Debug/net7.0/GradApp.dll
+/Users/umut/Downloads/GradApp/bin/Debug/net7.0/GradApp.pdb
+/Users/umut/Downloads/GradApp/bin/Debug/net7.0/AWSSDK.Core.dll
+/Users/umut/Downloads/GradApp/bin/Debug/net7.0/AWSSDK.SecurityToken.dll
+/Users/umut/Downloads/GradApp/bin/Debug/net7.0/DnsClient.dll
+/Users/umut/Downloads/GradApp/bin/Debug/net7.0/Microsoft.AspNetCore.OpenApi.dll
+/Users/umut/Downloads/GradApp/bin/Debug/net7.0/Microsoft.OpenApi.dll
+/Users/umut/Downloads/GradApp/bin/Debug/net7.0/MongoDB.Bson.dll
+/Users/umut/Downloads/GradApp/bin/Debug/net7.0/MongoDB.Driver.dll
+/Users/umut/Downloads/GradApp/bin/Debug/net7.0/MongoDB.Driver.Core.dll
+/Users/umut/Downloads/GradApp/bin/Debug/net7.0/MongoDB.Libmongocrypt.dll
+/Users/umut/Downloads/GradApp/bin/Debug/net7.0/Newtonsoft.Json.dll
+/Users/umut/Downloads/GradApp/bin/Debug/net7.0/SharpCompress.dll
+/Users/umut/Downloads/GradApp/bin/Debug/net7.0/Snappier.dll
+/Users/umut/Downloads/GradApp/bin/Debug/net7.0/Swashbuckle.AspNetCore.Swagger.dll
+/Users/umut/Downloads/GradApp/bin/Debug/net7.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/umut/Downloads/GradApp/bin/Debug/net7.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Users/umut/Downloads/GradApp/bin/Debug/net7.0/ZstdSharp.dll
+/Users/umut/Downloads/GradApp/bin/Debug/net7.0/runtimes/linux/native/libmongocrypt.so
+/Users/umut/Downloads/GradApp/bin/Debug/net7.0/runtimes/osx/native/libmongocrypt.dylib
+/Users/umut/Downloads/GradApp/bin/Debug/net7.0/runtimes/win/native/mongocrypt.dll
+/Users/umut/Downloads/GradApp/obj/Debug/net7.0/GradApp.csproj.AssemblyReference.cache
+/Users/umut/Downloads/GradApp/obj/Debug/net7.0/GradApp.GeneratedMSBuildEditorConfig.editorconfig
+/Users/umut/Downloads/GradApp/obj/Debug/net7.0/GradApp.AssemblyInfoInputs.cache
+/Users/umut/Downloads/GradApp/obj/Debug/net7.0/GradApp.AssemblyInfo.cs
+/Users/umut/Downloads/GradApp/obj/Debug/net7.0/GradApp.csproj.CoreCompileInputs.cache
+/Users/umut/Downloads/GradApp/obj/Debug/net7.0/GradApp.MvcApplicationPartsAssemblyInfo.cs
+/Users/umut/Downloads/GradApp/obj/Debug/net7.0/GradApp.MvcApplicationPartsAssemblyInfo.cache
+/Users/umut/Downloads/GradApp/obj/Debug/net7.0/staticwebassets/msbuild.GradApp.Microsoft.AspNetCore.StaticWebAssets.props
+/Users/umut/Downloads/GradApp/obj/Debug/net7.0/staticwebassets/msbuild.build.GradApp.props
+/Users/umut/Downloads/GradApp/obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.GradApp.props
+/Users/umut/Downloads/GradApp/obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.GradApp.props
+/Users/umut/Downloads/GradApp/obj/Debug/net7.0/staticwebassets.pack.json
+/Users/umut/Downloads/GradApp/obj/Debug/net7.0/staticwebassets.build.json
+/Users/umut/Downloads/GradApp/obj/Debug/net7.0/staticwebassets.development.json
+/Users/umut/Downloads/GradApp/obj/Debug/net7.0/scopedcss/bundle/GradApp.styles.css
+/Users/umut/Downloads/GradApp/obj/Debug/net7.0/GradApp.csproj.CopyComplete
+/Users/umut/Downloads/GradApp/obj/Debug/net7.0/GradApp.dll
+/Users/umut/Downloads/GradApp/obj/Debug/net7.0/refint/GradApp.dll
+/Users/umut/Downloads/GradApp/obj/Debug/net7.0/GradApp.pdb
+/Users/umut/Downloads/GradApp/obj/Debug/net7.0/GradApp.genruntimeconfig.cache
+/Users/umut/Downloads/GradApp/obj/Debug/net7.0/ref/GradApp.dll
+/Users/umut/Desktop/requirements/Grad/GradApp/bin/Debug/net7.0/publish/web.config
+/Users/umut/Desktop/requirements/Grad/GradApp/bin/Debug/net7.0/appsettings.Development.json
+/Users/umut/Desktop/requirements/Grad/GradApp/bin/Debug/net7.0/appsettings.json
+/Users/umut/Desktop/requirements/Grad/GradApp/bin/Debug/net7.0/publish/appsettings.Development.json
+/Users/umut/Desktop/requirements/Grad/GradApp/bin/Debug/net7.0/publish/appsettings.json
+/Users/umut/Desktop/requirements/Grad/GradApp/bin/Debug/net7.0/publish/GradApp.deps.json
+/Users/umut/Desktop/requirements/Grad/GradApp/bin/Debug/net7.0/publish/GradApp.runtimeconfig.json
+/Users/umut/Desktop/requirements/Grad/GradApp/bin/Debug/net7.0/GradApp
+/Users/umut/Desktop/requirements/Grad/GradApp/bin/Debug/net7.0/GradApp.deps.json
+/Users/umut/Desktop/requirements/Grad/GradApp/bin/Debug/net7.0/GradApp.runtimeconfig.json
+/Users/umut/Desktop/requirements/Grad/GradApp/bin/Debug/net7.0/GradApp.dll
+/Users/umut/Desktop/requirements/Grad/GradApp/bin/Debug/net7.0/GradApp.pdb
+/Users/umut/Desktop/requirements/Grad/GradApp/bin/Debug/net7.0/AWSSDK.Core.dll
+/Users/umut/Desktop/requirements/Grad/GradApp/bin/Debug/net7.0/AWSSDK.SecurityToken.dll
+/Users/umut/Desktop/requirements/Grad/GradApp/bin/Debug/net7.0/DnsClient.dll
+/Users/umut/Desktop/requirements/Grad/GradApp/bin/Debug/net7.0/Microsoft.AspNetCore.OpenApi.dll
+/Users/umut/Desktop/requirements/Grad/GradApp/bin/Debug/net7.0/Microsoft.OpenApi.dll
+/Users/umut/Desktop/requirements/Grad/GradApp/bin/Debug/net7.0/MongoDB.Bson.dll
+/Users/umut/Desktop/requirements/Grad/GradApp/bin/Debug/net7.0/MongoDB.Driver.dll
+/Users/umut/Desktop/requirements/Grad/GradApp/bin/Debug/net7.0/MongoDB.Driver.Core.dll
+/Users/umut/Desktop/requirements/Grad/GradApp/bin/Debug/net7.0/MongoDB.Libmongocrypt.dll
+/Users/umut/Desktop/requirements/Grad/GradApp/bin/Debug/net7.0/Newtonsoft.Json.dll
+/Users/umut/Desktop/requirements/Grad/GradApp/bin/Debug/net7.0/SharpCompress.dll
+/Users/umut/Desktop/requirements/Grad/GradApp/bin/Debug/net7.0/Snappier.dll
+/Users/umut/Desktop/requirements/Grad/GradApp/bin/Debug/net7.0/Swashbuckle.AspNetCore.Swagger.dll
+/Users/umut/Desktop/requirements/Grad/GradApp/bin/Debug/net7.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/umut/Desktop/requirements/Grad/GradApp/bin/Debug/net7.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Users/umut/Desktop/requirements/Grad/GradApp/bin/Debug/net7.0/ZstdSharp.dll
+/Users/umut/Desktop/requirements/Grad/GradApp/bin/Debug/net7.0/runtimes/linux/native/libmongocrypt.so
+/Users/umut/Desktop/requirements/Grad/GradApp/bin/Debug/net7.0/runtimes/osx/native/libmongocrypt.dylib
+/Users/umut/Desktop/requirements/Grad/GradApp/bin/Debug/net7.0/runtimes/win/native/mongocrypt.dll
+/Users/umut/Desktop/requirements/Grad/GradApp/obj/Debug/net7.0/GradApp.csproj.AssemblyReference.cache
+/Users/umut/Desktop/requirements/Grad/GradApp/obj/Debug/net7.0/GradApp.GeneratedMSBuildEditorConfig.editorconfig
+/Users/umut/Desktop/requirements/Grad/GradApp/obj/Debug/net7.0/GradApp.AssemblyInfoInputs.cache
+/Users/umut/Desktop/requirements/Grad/GradApp/obj/Debug/net7.0/GradApp.AssemblyInfo.cs
+/Users/umut/Desktop/requirements/Grad/GradApp/obj/Debug/net7.0/GradApp.csproj.CoreCompileInputs.cache
+/Users/umut/Desktop/requirements/Grad/GradApp/obj/Debug/net7.0/GradApp.MvcApplicationPartsAssemblyInfo.cs
+/Users/umut/Desktop/requirements/Grad/GradApp/obj/Debug/net7.0/GradApp.MvcApplicationPartsAssemblyInfo.cache
+/Users/umut/Desktop/requirements/Grad/GradApp/obj/Debug/net7.0/staticwebassets/msbuild.GradApp.Microsoft.AspNetCore.StaticWebAssets.props
+/Users/umut/Desktop/requirements/Grad/GradApp/obj/Debug/net7.0/staticwebassets/msbuild.build.GradApp.props
+/Users/umut/Desktop/requirements/Grad/GradApp/obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.GradApp.props
+/Users/umut/Desktop/requirements/Grad/GradApp/obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.GradApp.props
+/Users/umut/Desktop/requirements/Grad/GradApp/obj/Debug/net7.0/staticwebassets.pack.json
+/Users/umut/Desktop/requirements/Grad/GradApp/obj/Debug/net7.0/staticwebassets.build.json
+/Users/umut/Desktop/requirements/Grad/GradApp/obj/Debug/net7.0/staticwebassets.development.json
+/Users/umut/Desktop/requirements/Grad/GradApp/obj/Debug/net7.0/scopedcss/bundle/GradApp.styles.css
+/Users/umut/Desktop/requirements/Grad/GradApp/obj/Debug/net7.0/GradApp.csproj.CopyComplete
+/Users/umut/Desktop/requirements/Grad/GradApp/obj/Debug/net7.0/GradApp.dll
+/Users/umut/Desktop/requirements/Grad/GradApp/obj/Debug/net7.0/refint/GradApp.dll
+/Users/umut/Desktop/requirements/Grad/GradApp/obj/Debug/net7.0/GradApp.pdb
+/Users/umut/Desktop/requirements/Grad/GradApp/obj/Debug/net7.0/GradApp.genruntimeconfig.cache
+/Users/umut/Desktop/requirements/Grad/GradApp/obj/Debug/net7.0/ref/GradApp.dll
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\Grad\GradApp\bin\Debug\net7.0\appsettings.Development.json
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\Grad\GradApp\bin\Debug\net7.0\appsettings.json
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\Grad\GradApp\bin\Debug\net7.0\publish\web.config
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\Grad\GradApp\bin\Debug\net7.0\publish\appsettings.Development.json
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\Grad\GradApp\bin\Debug\net7.0\publish\appsettings.json
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\Grad\GradApp\bin\Debug\net7.0\publish\GradApp.deps.json
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\Grad\GradApp\bin\Debug\net7.0\publish\GradApp.runtimeconfig.json
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\Grad\GradApp\bin\Debug\net7.0\GradApp.exe
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\Grad\GradApp\bin\Debug\net7.0\GradApp.deps.json
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\Grad\GradApp\bin\Debug\net7.0\GradApp.runtimeconfig.json
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\Grad\GradApp\bin\Debug\net7.0\GradApp.dll
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\Grad\GradApp\bin\Debug\net7.0\GradApp.pdb
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\Grad\GradApp\bin\Debug\net7.0\AWSSDK.Core.dll
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\Grad\GradApp\bin\Debug\net7.0\AWSSDK.SecurityToken.dll
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\Grad\GradApp\bin\Debug\net7.0\DnsClient.dll
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\Grad\GradApp\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\Grad\GradApp\bin\Debug\net7.0\Microsoft.OpenApi.dll
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\Grad\GradApp\bin\Debug\net7.0\MongoDB.Bson.dll
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\Grad\GradApp\bin\Debug\net7.0\MongoDB.Driver.dll
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\Grad\GradApp\bin\Debug\net7.0\MongoDB.Driver.Core.dll
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\Grad\GradApp\bin\Debug\net7.0\MongoDB.Libmongocrypt.dll
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\Grad\GradApp\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\Grad\GradApp\bin\Debug\net7.0\SharpCompress.dll
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\Grad\GradApp\bin\Debug\net7.0\Snappier.dll
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\Grad\GradApp\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\Grad\GradApp\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\Grad\GradApp\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\Grad\GradApp\bin\Debug\net7.0\ZstdSharp.dll
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\Grad\GradApp\bin\Debug\net7.0\runtimes\linux\native\libmongocrypt.so
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\Grad\GradApp\bin\Debug\net7.0\runtimes\osx\native\libmongocrypt.dylib
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\Grad\GradApp\bin\Debug\net7.0\runtimes\win\native\mongocrypt.dll
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\Grad\GradApp\obj\Debug\net7.0\GradApp.csproj.AssemblyReference.cache
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\Grad\GradApp\obj\Debug\net7.0\GradApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\Grad\GradApp\obj\Debug\net7.0\GradApp.AssemblyInfoInputs.cache
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\Grad\GradApp\obj\Debug\net7.0\GradApp.AssemblyInfo.cs
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\Grad\GradApp\obj\Debug\net7.0\GradApp.csproj.CoreCompileInputs.cache
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\Grad\GradApp\obj\Debug\net7.0\GradApp.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\Grad\GradApp\obj\Debug\net7.0\GradApp.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\Grad\GradApp\obj\Debug\net7.0\staticwebassets.build.json
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\Grad\GradApp\obj\Debug\net7.0\staticwebassets.development.json
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\Grad\GradApp\obj\Debug\net7.0\staticwebassets\msbuild.GradApp.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\Grad\GradApp\obj\Debug\net7.0\staticwebassets\msbuild.build.GradApp.props
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\Grad\GradApp\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.GradApp.props
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\Grad\GradApp\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.GradApp.props
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\Grad\GradApp\obj\Debug\net7.0\staticwebassets.pack.json
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\Grad\GradApp\obj\Debug\net7.0\scopedcss\bundle\GradApp.styles.css
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\Grad\GradApp\obj\Debug\net7.0\GradApp.csproj.CopyComplete
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\Grad\GradApp\obj\Debug\net7.0\GradApp.dll
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\Grad\GradApp\obj\Debug\net7.0\refint\GradApp.dll
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\Grad\GradApp\obj\Debug\net7.0\GradApp.pdb
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\Grad\GradApp\obj\Debug\net7.0\GradApp.genruntimeconfig.cache
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\Grad\GradApp\obj\Debug\net7.0\ref\GradApp.dll
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\SuGraduate\Backend\GradApp\bin\Debug\net7.0\publish\web.config
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\SuGraduate\Backend\GradApp\bin\Debug\net7.0\appsettings.Development.json
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\SuGraduate\Backend\GradApp\bin\Debug\net7.0\appsettings.json
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\SuGraduate\Backend\GradApp\bin\Debug\net7.0\publish\appsettings.Development.json
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\SuGraduate\Backend\GradApp\bin\Debug\net7.0\publish\appsettings.json
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\SuGraduate\Backend\GradApp\bin\Debug\net7.0\publish\GradApp.deps.json
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\SuGraduate\Backend\GradApp\bin\Debug\net7.0\publish\GradApp.runtimeconfig.json
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\SuGraduate\Backend\GradApp\bin\Debug\net7.0\GradApp.exe
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\SuGraduate\Backend\GradApp\bin\Debug\net7.0\GradApp.deps.json
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\SuGraduate\Backend\GradApp\bin\Debug\net7.0\GradApp.runtimeconfig.json
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\SuGraduate\Backend\GradApp\bin\Debug\net7.0\GradApp.dll
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\SuGraduate\Backend\GradApp\bin\Debug\net7.0\GradApp.pdb
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\SuGraduate\Backend\GradApp\bin\Debug\net7.0\AWSSDK.Core.dll
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\SuGraduate\Backend\GradApp\bin\Debug\net7.0\AWSSDK.SecurityToken.dll
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\SuGraduate\Backend\GradApp\bin\Debug\net7.0\DnsClient.dll
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\SuGraduate\Backend\GradApp\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\SuGraduate\Backend\GradApp\bin\Debug\net7.0\Microsoft.OpenApi.dll
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\SuGraduate\Backend\GradApp\bin\Debug\net7.0\MongoDB.Bson.dll
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\SuGraduate\Backend\GradApp\bin\Debug\net7.0\MongoDB.Driver.dll
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\SuGraduate\Backend\GradApp\bin\Debug\net7.0\MongoDB.Driver.Core.dll
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\SuGraduate\Backend\GradApp\bin\Debug\net7.0\MongoDB.Libmongocrypt.dll
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\SuGraduate\Backend\GradApp\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\SuGraduate\Backend\GradApp\bin\Debug\net7.0\SharpCompress.dll
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\SuGraduate\Backend\GradApp\bin\Debug\net7.0\Snappier.dll
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\SuGraduate\Backend\GradApp\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\SuGraduate\Backend\GradApp\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\SuGraduate\Backend\GradApp\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\SuGraduate\Backend\GradApp\bin\Debug\net7.0\ZstdSharp.dll
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\SuGraduate\Backend\GradApp\bin\Debug\net7.0\runtimes\linux\native\libmongocrypt.so
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\SuGraduate\Backend\GradApp\bin\Debug\net7.0\runtimes\osx\native\libmongocrypt.dylib
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\SuGraduate\Backend\GradApp\bin\Debug\net7.0\runtimes\win\native\mongocrypt.dll
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\SuGraduate\Backend\GradApp\obj\Debug\net7.0\GradApp.csproj.AssemblyReference.cache
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\SuGraduate\Backend\GradApp\obj\Debug\net7.0\GradApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\SuGraduate\Backend\GradApp\obj\Debug\net7.0\GradApp.AssemblyInfoInputs.cache
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\SuGraduate\Backend\GradApp\obj\Debug\net7.0\GradApp.AssemblyInfo.cs
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\SuGraduate\Backend\GradApp\obj\Debug\net7.0\GradApp.csproj.CoreCompileInputs.cache
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\SuGraduate\Backend\GradApp\obj\Debug\net7.0\GradApp.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\SuGraduate\Backend\GradApp\obj\Debug\net7.0\GradApp.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\SuGraduate\Backend\GradApp\obj\Debug\net7.0\GradApp.sourcelink.json
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\SuGraduate\Backend\GradApp\obj\Debug\net7.0\staticwebassets.build.json
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\SuGraduate\Backend\GradApp\obj\Debug\net7.0\staticwebassets.development.json
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\SuGraduate\Backend\GradApp\obj\Debug\net7.0\staticwebassets\msbuild.GradApp.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\SuGraduate\Backend\GradApp\obj\Debug\net7.0\staticwebassets\msbuild.build.GradApp.props
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\SuGraduate\Backend\GradApp\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.GradApp.props
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\SuGraduate\Backend\GradApp\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.GradApp.props
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\SuGraduate\Backend\GradApp\obj\Debug\net7.0\staticwebassets.pack.json
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\SuGraduate\Backend\GradApp\obj\Debug\net7.0\scopedcss\bundle\GradApp.styles.css
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\SuGraduate\Backend\GradApp\obj\Debug\net7.0\GradApp.csproj.CopyComplete
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\SuGraduate\Backend\GradApp\obj\Debug\net7.0\GradApp.dll
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\SuGraduate\Backend\GradApp\obj\Debug\net7.0\refint\GradApp.dll
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\SuGraduate\Backend\GradApp\obj\Debug\net7.0\GradApp.pdb
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\SuGraduate\Backend\GradApp\obj\Debug\net7.0\GradApp.genruntimeconfig.cache
+C:\Users\umut.ulas\OneDrive - gilbarco\Masaüstü\SuGraduate\Backend\GradApp\obj\Debug\net7.0\ref\GradApp.dll
