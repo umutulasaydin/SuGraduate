@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/SuGraduate/static/css/main.de4b162a.css",
-    "main.js": "/SuGraduate/static/js/main.29d70e35.js",
+    "main.js": "/SuGraduate/static/js/main.1d8d268b.js",
     "static/media/GradAppLogo.png": "/SuGraduate/static/media/GradAppLogo.8b305166838de2d41fdd.png",
     "static/media/primeicons.svg": "/SuGraduate/static/media/primeicons.e1441b135b3ca9ad643c.svg",
     "static/media/Inter-italic.var.woff2?v=3.19": "/SuGraduate/static/media/Inter-italic.var.30807be7abc48ba8c73c.woff2",
@@ -12,10 +12,10 @@
     "static/media/primeicons.woff2": "/SuGraduate/static/media/primeicons.78172950b335ccdb94e2.woff2",
     "index.html": "/SuGraduate/index.html",
     "main.de4b162a.css.map": "/SuGraduate/static/css/main.de4b162a.css.map",
-    "main.29d70e35.js.map": "/SuGraduate/static/js/main.29d70e35.js.map"
+    "main.1d8d268b.js.map": "/SuGraduate/static/js/main.1d8d268b.js.map"
   },
   "entrypoints": [
     "static/css/main.de4b162a.css",
-    "static/js/main.29d70e35.js"
+    "static/js/main.1d8d268b.js"
   ]
 }
