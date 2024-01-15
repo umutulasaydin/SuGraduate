@@ -31,5 +31,7 @@ jobs:
         with:
           context: .
           file: frontend/Dockerfile
+          push: true
+          tags: umutulas62/gradappui:gradappui
 
     
