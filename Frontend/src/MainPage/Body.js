@@ -13,6 +13,8 @@ import InfoBox from "../Shared/InfoBox";
 import { Majors, EntryYear } from "../Shared/consts";
 import { useMediaQuery } from 'react-responsive';
 function Body() {
+
+  const API_URL = "https://gradapp20240115113616.azurewebsites.net/"
   //Responsive
   const isDesktopOrLaptop = useMediaQuery({ query: '(min-width: 720px)' })
   const isTabletOrMobile = useMediaQuery({ query: '(max-width: 720px)' })
@@ -128,7 +130,7 @@ function Body() {
 
     const getData = async () => {
       try {
-        const response = await fetch("http://localhost:5001/Courses")
+        const response = await fetch(API_URL+"/Courses")
         if (response.ok) {
           const data = await response.json();
           setCourses(data);
@@ -191,7 +193,7 @@ function Body() {
         }
       }
       const postData = async () => {
-        const url = 'http://localhost:5001/Control';
+        const url = API_URL + 'Control';
         var body = {
           "Courses": allLessons,
           "EntryYear": selectedYear.code,
