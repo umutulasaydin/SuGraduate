@@ -18,7 +18,7 @@ function Header(props) {
       <div className=' flex w-full h-6rem  align-items-center'>
         <Avatar image={logo} size="xlarge" className='mx-2' shape="circle" onClick={() => { navigate("/"); }} />
 
-        {isDesktopOrLaptop && <h1 className='m-0 text-4xl cursor-pointer' onClick={() => { navigate("/"); }}>suGraduate</h1>}
+        {isDesktopOrLaptop && <h1 className='m-0 text-4xl cursor-pointer' onClick={() => { navigate("/"); }}>SuGraduate</h1>}
       </div>
       <div className='flex align-items-end'>
         {isDesktopOrLaptop && <Button icon="pi pi-envelope" label='Contact Us' onClick={() => setVisible(true)} size="small" className="" rounded outlined pt={{
