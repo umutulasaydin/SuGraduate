@@ -1,0 +1,1080 @@
+<html>
+<body>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>DEGREE EVALUATION</title>
+        <style type="text/css">
+            td{
+                font-family:Verdana,tahoma,arial;
+                color:#CB0303;
+                font-size:12px;
+            }
+        </style>
+    </head>
+<center>
+
+        <div style="display:none;">
+            select * from 
+                sfrstcr, smrdous m
+                    where 
+                        --sfrstcr_term_code       >=  f_get_last_term and
+                        sfrstcr_pidm            =   f_get_pidm(LPAD (00027756, 8, 0)) and
+                        sfrstcr_gmod_code       <>  'U' and
+                        f_get_levl_code(f_get_last_term, f_get_pidm(LPAD (00027756, 8, 0))) in ('UG') and
+                        sfrstcr_crn             =   m.SMRDOUS_CRN       and
+                        m.SMRDOUS_PROGRAM       =   BSCS     and
+                        m.SMRDOUS_TERM_CODE     =   sfrstcr_term_code   and
+                        m.SMRDOUS_REQUEST_NO    =   5      and
+                        sfrstcr_grde_code       is  null;
+        </div>
+    
+<div align="right"><font face=Verdana,tahoma,arial color=#00287f size=1 ><b>Comply Date : 11.12.2023 02:56</b></font><br></div>
+<font face=tahoma,arial size=4 color=#00287f><b>DEGREE EVALUATION</b></font>
+<br />
+<br />
+<table  width="750" border="1" cellspacing="0" cellpadding="0" bordercolor="#000000">
+<tr align="center">
+<td align="right" bgcolor="#D9E3EE"><b> <FONT face=Arial size=2 color=#013C5B>Student : </Font></b></td>
+<td align="left"><b> <FONT face=Arial size=2 color=#013C5B>&nbsp;&nbsp;&nbsp;00027756 - Burcu Durmuş</Font></b></td>
+<td align="right" bgcolor="#D9E3EE"><b> <FONT face=Arial size=2 color=#013C5B>Catalog Term : </Font></b></td>
+<td align="left"><b> <FONT face=Arial size=2 color=#013C5B>&nbsp;&nbsp;&nbsp;Fall 2019-2020</Font></b></td>
+</tr>
+<tr align="center">
+<td align="right" bgcolor="#D9E3EE"><b> <FONT face=Arial size=2 color=#013C5B>Program : </Font></b></td>
+<td align="left"><b> <FONT face=Arial size=2 color=#013C5B>&nbsp;&nbsp;&nbsp;Computer Science and Engineering<br><br>&nbsp;&nbsp;&nbsp;<i>(Minor- Decision and Behavior</i>)</i></Font></b></td>
+<td align="right" bgcolor="#D9E3EE"><b> <FONT face=Arial size=2 color=#013C5B>Evaluation Term : </Font></b></td>
+<td align="left"><b> <FONT face=Arial size=2 color=#013C5B>&nbsp;&nbsp;&nbsp;Fall 2023-2024</Font></b></td>
+</tr>
+<tr align="center">
+<td align="right" bgcolor="#D9E3EE"><b> <FONT face=Arial size=2 color=#013C5B>Result : </Font></b></td>
+<TD id="result" colspan="3" align="left">
+<font face=tahoma,arial size=2 color=#CB0303><b>&nbsp;&nbsp;&nbsp;Degree requirements are not met.</b></font>
+</TD>
+</tr>
+</table>
+<br />
+<table  width="750" border="1" cellspacing="0" cellpadding="0" bordercolor="#000000">
+<tr align="center" bgcolor="#D9E3EE">
+<td colspan="5"><img src="/images/s_not.jpg" class="incomp" /> <b> <FONT face=Arial size=2 color=#013C5B>GENERAL PROGRAM REQUIREMENTS</Font></b></td>
+</tr>
+<tr align="center" bgcolor="#D9E3EE">
+<td><b> <FONT face=Arial size=2 color=#013C5B>&nbsp;</Font></b></td>
+<td><b> <FONT face=Arial size=2 color=#013C5B>ECTS Credits</Font></b></td>
+<td><b> <FONT face=Arial size=2 color=#013C5B>SU Credits</Font></b></td>
+<td><b> <FONT face=Arial size=2 color=#013C5B>Program Cumulative GPA</Font></b></td>
+<td><b> <FONT face=Arial size=2 color=#013C5B>Cumulative GPA</Font></b></td>
+</tr>
+<tr align="center">
+<td align="right" bgcolor="#D9E3EE"><b> <FONT face=Arial size=2 color=#013C5B>Minimum Required : </Font></b></td>
+<td><b> <FONT face=Arial size=2 color=#013C5B>240</Font></b></td>
+<td><b> <FONT face=Arial size=2 color=#013C5B>125</Font></b></td>
+<td><b> <FONT face=Arial size=2 color=#013C5B>2.00</Font></b></td>
+<td><b> <FONT face=Arial size=2 color=#013C5B>2.00</Font></b></td>
+</tr>
+<tr align="center">
+<td align="right" bgcolor="#D9E3EE"><b> <FONT face=Arial size=2 color=#013C5B>Completed : </Font></b></td>
+<td><b> <FONT face=Arial size=2 color=#013C5B><div id="ects_completed"></div></Font></b></td>
+<td><b> <FONT face=Arial size=2 color=#013C5B>116</Font></b></td>
+<td><b> <FONT face=Arial size=2 color=#013C5B>3.24</Font></b></td>
+<td><b> <FONT face=Arial size=2 color=#013C5B>3.24</Font></b></td>
+</tr>
+</table>
+<table style="margin-top:5px;" width="750" border="0" cellspacing="0" cellpadding="0" bordercolor="#000000">
+<tbody>
+<tr align="justify">
+<td><i><font size=1 color="#013C5B">(Attention! The total number of ECTS credits collected from university courses, required courses, core electives, area electives, and free electives have to be at least 240.)</font> </i></td>
+</tr>
+</tbody>
+</table>
+<br />
+<table  width="750" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="250" align="left" valign="top">
+<table  width="240" border="1" cellspacing="0" cellpadding="0" bordercolor="#000000">
+<tr>
+<td colspan="5" align="center" bgcolor="#D9E3EE"><b> <FONT face=Arial size=2 color=#013C5B><img src="/images/s_ok.jpg" id="is_passed_1_0" /> UNIVERSITY COURSES</Font></b></td>
+</tr>
+<tr>
+<td align="Left"  bgcolor="#D9E3EE">&nbsp;<b><FONT face=Arial size=2 color=#013C5B>Course</b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>Grade</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>ECTS Credits</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>SU Credits</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>Term</font></b></td>
+</tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;CIP&nbsp;101N</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;S</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>1</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>0</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>201902</font></td>
+</tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;HIST&nbsp;191</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;S</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>3</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>2</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202001</font></td>
+</tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;HIST&nbsp;192</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;A-</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>3</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>2</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202002</font></td>
+</tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;MATH&nbsp;102</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;S</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>6</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>3</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202002</font></td>
+</tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;NS&nbsp;101</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;A</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>6</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>4</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202001</font></td>
+</tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;NS&nbsp;102</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;A-</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>6</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>4</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202002</font></td>
+</tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;SPS&nbsp;101</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;S</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>6</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>3</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202001</font></td>
+</tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;SPS&nbsp;102</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;A</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>6</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>3</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202002</font></td>
+</tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;SPS&nbsp;303</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;B-</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>5</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>3</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202201</font></td>
+</tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;TLL&nbsp;101</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;A</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>3</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>2</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202001</font></td>
+</tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;TLL&nbsp;102</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;B+</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>3</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>2</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202002</font></td>
+</tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;HUM&nbsp;202</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;B</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>5</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>3</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202101</font></td>
+</tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;MATH&nbsp;101</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;A</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>6</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>3</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202001</font></td>
+</tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;AL&nbsp;102</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;A</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>5</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>3</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202002</font></td>
+</tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;IF&nbsp;100</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;A</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>5</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>3</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202001</font></td>
+</tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;PROJ&nbsp;201</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;A</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>1</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>1</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202001</font></td>
+</tr>
+<tr>
+<td colspan="5">&nbsp;&nbsp;&nbsp;<a style="text-decoration:none" href="SU_DEGREE.p_degree_detail?P_TERM=201901&P_PROGRAM=BSCS&P_SUBMIT=&P_LANG=EN&P_LEVEL=UG#UC_FENS" target="_self"><b><font face=tahoma,arial size=1 color=#00287f>Click here for UNIVERSITY COURSES</font></b></a><br></td>
+</tr>
+<tr>
+<td align="left" colspan="2"  bgcolor="#D9E3EE">&nbsp;<b><FONT face=Arial size=2 color=#013C5B>&nbsp;</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>ECTS Credits</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>SU Credits</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>Courses</font></b></td>
+</tr>
+<tr>
+<td align="left" colspan="2"  bgcolor="#D9E3EE">&nbsp;<b><FONT face=Arial size=2 color=#013C5B>Minimum Required </font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>-</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>41</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>-</font></b></td>
+</tr>
+<tr>
+<td align="left" colspan="2"  bgcolor="#D9E3EE">&nbsp;<b><FONT face=Arial size=2 color=#013C5B>Completed</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>70</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>41</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>16</font></b></td>
+</tr>
+</table>
+<br />
+
+      <script>
+         if ( ("Y" == "Y") && (70 < 0.00)) {
+            var fieldNameElement = document.getElementById("is_passed_1_" + 0);
+            if(fieldNameElement != null) {
+                fieldNameElement.src = "/images/s_not.jpg";
+                fieldNameElement.setAttribute("class", "incomp");
+            }
+         } 
+      </script>
+ 
+<table  width="240" border="1" cellspacing="0" cellpadding="0" bordercolor="#000000">
+<tr>
+<td colspan="5" align="center" bgcolor="#D9E3EE"><b> <FONT face=Arial size=2 color=#013C5B><img src="/images/s_not.jpg" class="incomp" /> CORE ELECTIVES</Font></b></td>
+</tr>
+<tr>
+<td align="Left"  bgcolor="#D9E3EE">&nbsp;<b><FONT face=Arial size=2 color=#013C5B>Course</b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>Grade</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>ECTS Credits</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>SU Credits</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>Term</font></b></td>
+</tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;CS&nbsp;303</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;I.P.</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>7</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>4</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202301</font></td>
+</tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;CS&nbsp;305</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;I.P.</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>6</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>3</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202301</font></td>
+</tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;CS&nbsp;306</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;D+</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>6</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>3</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202102</font></td>
+</tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;CS&nbsp;308</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;B-</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>7</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>4</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202202</font></td>
+</tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;CS&nbsp;408</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;B-</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>6</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>3</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202201</font></td>
+</tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;CS&nbsp;412</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;B</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>6</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>3</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202103</font></td>
+</tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;CS&nbsp;411</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;I.P.</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>6</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>3</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202301</font></td>
+</tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;CS&nbsp;310</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;A-</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>6</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>3</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202201</font></td>
+</tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;CS&nbsp;210</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;A</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>6</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>3</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202102</font></td>
+</tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;CS&nbsp;419</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;I.P.</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>6</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>3</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202301</font></td>
+</tr>
+<tr>
+<td colspan="5">&nbsp;&nbsp;&nbsp;<a style="text-decoration:none" href="SU_DEGREE.p_degree_detail?P_TERM=201901&P_PROGRAM=BSCS&P_SUBMIT=&P_LANG=EN&P_LEVEL=UG#BSCS_CEL" target="_self"><b><font face=tahoma,arial size=1 color=#00287f>Click here for CORE ELECTIVES</font></b></a><br></td>
+</tr>
+<tr>
+<td align="left" colspan="2"  bgcolor="#D9E3EE">&nbsp;<b><FONT face=Arial size=2 color=#013C5B>&nbsp;</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>ECTS Credits</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>SU Credits</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>Courses</font></b></td>
+</tr>
+<tr>
+<td align="left" colspan="2"  bgcolor="#D9E3EE">&nbsp;<b><FONT face=Arial size=2 color=#013C5B>Minimum Required </font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>-</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>35</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>-</font></b></td>
+</tr>
+<tr>
+<td align="left" colspan="2"  bgcolor="#D9E3EE">&nbsp;<b><FONT face=Arial size=2 color=#013C5B>Completed</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>62</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>32</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>10</font></b></td>
+</tr>
+</table>
+<br />
+
+      <script>
+         if ( ("N" == "Y") && (62 < 0.00)) {
+            var fieldNameElement = document.getElementById("is_passed_1_" + 1);
+            if(fieldNameElement != null) {
+                fieldNameElement.src = "/images/s_not.jpg";
+                fieldNameElement.setAttribute("class", "incomp");
+            }
+         } 
+      </script>
+ 
+</td>
+<td width="250" align="center" valign="top">
+<table  width="240" border="1" cellspacing="0" cellpadding="0" bordercolor="#000000">
+<tr>
+<td colspan="5" align="center" bgcolor="#D9E3EE"><b> <FONT face=Arial size=2 color=#013C5B><img src="/images/s_ok.jpg" id="is_passed_2_0" /> REQUIRED COURSES</Font></b></td>
+</tr>
+<tr>
+<td align="Left"  bgcolor="#D9E3EE">&nbsp;<b><FONT face=Arial size=2 color=#013C5B>Course</b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>Grade</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>ECTS Credits</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>SU Credits</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>Term</font></b></td>
+</tr>
+<tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;ENS&nbsp;491</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;A</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>2</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>1</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202202</font></td>
+</tr>
+<tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;ENS&nbsp;492</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;I.P.</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>5</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>3</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202301</font></td>
+</tr>
+<tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;CS&nbsp;395</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;S</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>5</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>0</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202203</font></td>
+</tr>
+<tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;CS&nbsp;204</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;B-</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>6</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>3</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202101</font></td>
+</tr>
+<tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;CS&nbsp;201</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;S</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>6</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>3</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202002</font></td>
+</tr>
+<tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;CS&nbsp;300</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;B</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>6</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>3</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202102</font></td>
+</tr>
+<tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;CS&nbsp;301</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;C+</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>6</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>3</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202201</font></td>
+</tr>
+<tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;MATH&nbsp;204</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;B-</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>6</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>3</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202102</font></td>
+</tr>
+<tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;MATH&nbsp;201</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;C+</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>6</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>3</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202101</font></td>
+</tr>
+<tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;MATH&nbsp;203</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;B</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>6</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>3</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202101</font></td>
+</tr>
+<tr>
+<td colspan="5">&nbsp;&nbsp;&nbsp;<a style="text-decoration:none" href="SU_DEGREE.p_degree_detail?P_TERM=201901&P_PROGRAM=BSCS&P_SUBMIT=&P_LANG=EN&P_LEVEL=UG#BSCS_REQ" target="_self"><b><font face=tahoma,arial size=1 color=#00287f>Click here for REQUIRED COURSES</font></b></a><br></td>
+</tr>
+<tr>
+<td align="left" colspan="2"  bgcolor="#D9E3EE">&nbsp;<b><FONT face=Arial size=2 color=#013C5B>&nbsp;</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>ECTS Credits</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>SU Credits</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>Courses</font></b></td>
+</tr>
+<td align="left" colspan="2"  bgcolor="#D9E3EE">&nbsp;<b><FONT face=Arial size=2 color=#013C5B>Minimum Required</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>-</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>25</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>10</font></b></td>
+</tr>
+<tr>
+<td align="left" colspan="2"  bgcolor="#D9E3EE">&nbsp;<b><FONT face=Arial size=2 color=#013C5B>Completed</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>54</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>25</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>10</font></b></td>
+</tr>
+</table>
+<br />
+
+    <script>
+        if(("Y" == "Y") && (54 < 0.00)){
+            var fieldNameElement = document.getElementById("is_passed_2_" + 0);
+            if(fieldNameElement != null) {
+                fieldNameElement.src = "/images/s_not.jpg";
+                fieldNameElement.setAttribute("class", "incomp");
+            }
+        }
+    </script>
+ 
+<table  width="240" border="1" cellspacing="0" cellpadding="0" bordercolor="#000000">
+<tr>
+<td colspan="5" align="center" bgcolor="#D9E3EE"><b> <FONT face=Arial size=2 color=#013C5B><img src="/images/s_not.jpg" class="incomp" /> AREA ELECTIVES</Font></b></td>
+</tr>
+<tr>
+<td align="Left"  bgcolor="#D9E3EE">&nbsp;<b><FONT face=Arial size=2 color=#013C5B>Course</b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>Grade</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>ECTS Credits</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>SU Credits</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>Term</font></b></td>
+</tr>
+<tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;ECON&nbsp;201</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;B+</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>6</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>3</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202101</font></td>
+</tr>
+<tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;CS&nbsp;414</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;B+</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>6</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>3</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202202</font></td>
+</tr>
+<tr>
+<td colspan="5">&nbsp;&nbsp;&nbsp;<a style="text-decoration:none" href="SU_DEGREE.p_degree_detail?P_TERM=201901&P_PROGRAM=BSCS&P_SUBMIT=&P_LANG=EN&P_LEVEL=UG#BSCS_AEL" target="_self"><b><font face=tahoma,arial size=1 color=#00287f>Click here for AREA ELECTIVES</font></b></a><br></td>
+</tr>
+<tr>
+<td align="left" colspan="2"  bgcolor="#D9E3EE">&nbsp;<b><FONT face=Arial size=2 color=#013C5B>&nbsp;</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>ECTS Credits</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>SU Credits</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>Courses</font></b></td>
+</tr>
+<td align="left" colspan="2"  bgcolor="#D9E3EE">&nbsp;<b><FONT face=Arial size=2 color=#013C5B>Minimum Required</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>-</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>9</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>-</font></b></td>
+</tr>
+<tr>
+<td align="left" colspan="2"  bgcolor="#D9E3EE">&nbsp;<b><FONT face=Arial size=2 color=#013C5B>Completed</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>12</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>6</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>2</font></b></td>
+</tr>
+</table>
+<br />
+
+    <script>
+        if(("N" == "Y") && (12 < 0.00)){
+            var fieldNameElement = document.getElementById("is_passed_2_" + 1);
+            if(fieldNameElement != null) {
+                fieldNameElement.src = "/images/s_not.jpg";
+                fieldNameElement.setAttribute("class", "incomp");
+            }
+        }
+    </script>
+ 
+<table  width="240" border="1" cellspacing="0" cellpadding="0" bordercolor="#000000">
+<tr>
+<td colspan="5" align="center" bgcolor="#D9E3EE"><b> <FONT face=Arial size=2 color=#013C5B><img src="/images/s_not.jpg" class="incomp" /> FREE ELECTIVES</Font></b></td>
+</tr>
+<tr>
+<td align="Left"  bgcolor="#D9E3EE">&nbsp;<b><FONT face=Arial size=2 color=#013C5B>Course</b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>Grade</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>ECTS Credits</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>SU Credits</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>Term</font></b></td>
+</tr>
+<tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;PSY&nbsp;201</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;B+</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>6</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>3</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202102</font></td>
+</tr>
+<tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;PSY&nbsp;320</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;B-</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>6</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>3</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202202</font></td>
+</tr>
+<tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;ORG&nbsp;302</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;A</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>6</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>3</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202201</font></td>
+</tr>
+<tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;NS&nbsp;216</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;B+</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>6</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>3</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202202</font></td>
+</tr>
+<tr>
+<td colspan="5">&nbsp;&nbsp;&nbsp;<a style="text-decoration:none" href="SU_DEGREE.p_degree_detail?P_TERM=201901&P_PROGRAM=BSCS&P_SUBMIT=&P_LANG=EN&P_LEVEL=UG#BSCS_FEL" target="_self"><b><font face=tahoma,arial size=1 color=#00287f>Click here for FREE ELECTIVES</font></b></a><br></td>
+</tr>
+<tr>
+<td align="left" colspan="2"  bgcolor="#D9E3EE">&nbsp;<b><FONT face=Arial size=2 color=#013C5B>&nbsp;</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>ECTS Credits</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>SU Credits</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>Courses</font></b></td>
+</tr>
+<td align="left" colspan="2"  bgcolor="#D9E3EE">&nbsp;<b><FONT face=Arial size=2 color=#013C5B>Minimum Required</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>-</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>15</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>-</font></b></td>
+</tr>
+<tr>
+<td align="left" colspan="2"  bgcolor="#D9E3EE">&nbsp;<b><FONT face=Arial size=2 color=#013C5B>Completed</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>24</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>12</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>4</font></b></td>
+</tr>
+</table>
+<br />
+
+    <script>
+        if(("N" == "Y") && (24 < 0.00)){
+            var fieldNameElement = document.getElementById("is_passed_2_" + 2);
+            if(fieldNameElement != null) {
+                fieldNameElement.src = "/images/s_not.jpg";
+                fieldNameElement.setAttribute("class", "incomp");
+            }
+        }
+    </script>
+ 
+<table  width="200" border="1" cellspacing="0" cellpadding="0" bordercolor="#000000">
+<tr>
+<td colspan="4" align="center" bgcolor="#D9E3EE"><b> <FONT face=Arial size=2 color=#013C5B><img src="/images/s_ok.jpg" id="is_passed_2_3" /> BASIC SCIENCE</Font></b></td>
+</tr>
+<tr>
+<td align="Left"  bgcolor="#D9E3EE">&nbsp;<b><FONT face=Arial size=2 color=#013C5B>Course</b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>Grade</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>ECTS Credits</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>Term</font></b></td>
+</tr>
+<tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;CS&nbsp;210</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;A</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>2</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202102</font></td>
+</tr>
+<tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;CS&nbsp;300</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;B</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>1</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202102</font></td>
+</tr>
+<tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;CS&nbsp;301</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;C+</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>1</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202201</font></td>
+</tr>
+<tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;CS&nbsp;303</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;I.P.</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>1</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202301</font></td>
+</tr>
+<tr>
+<tr>
+</tr>
+<tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;CS&nbsp;412</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;B</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>3</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202103</font></td>
+</tr>
+<tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;MATH&nbsp;101</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;A</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>6</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202001</font></td>
+</tr>
+<tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;MATH&nbsp;102</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;S</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>6</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202002</font></td>
+</tr>
+<tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;MATH&nbsp;201</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;C+</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>6</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202101</font></td>
+</tr>
+<tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;MATH&nbsp;203</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;B</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>6</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202101</font></td>
+</tr>
+<tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;MATH&nbsp;204</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;B-</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>6</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202102</font></td>
+</tr>
+<tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;NS&nbsp;101</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;A</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>6</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202001</font></td>
+</tr>
+<tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;NS&nbsp;102</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;A-</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>6</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202002</font></td>
+</tr>
+<tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;NS&nbsp;216</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;B+</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>5</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202202</font></td>
+</tr>
+<tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;PSY&nbsp;201</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;B+</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>2</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202102</font></td>
+</tr>
+<tr>
+<td colspan="5">&nbsp;&nbsp;&nbsp;<a style="text-decoration:none" href="SU_DEGREE.p_degree_detail?P_TERM=201901&P_PROGRAM=BSCS&P_SUBMIT=&P_LANG=EN&P_LEVEL=UG#BASIC_SCIE" target="_self"><b><font face=tahoma,arial size=1 color=#00287f>Click here for BASIC SCIENCE</font></b></a><br></td>
+</tr>
+<tr>
+<td align="left" colspan="2"  bgcolor="#D9E3EE">&nbsp;<b><FONT face=Arial size=2 color=#013C5B>&nbsp;</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>ECTS Credits</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>Courses</font></b></td>
+</tr>
+<td align="left" colspan="2"  bgcolor="#D9E3EE">&nbsp;<b><FONT face=Arial size=2 color=#013C5B>Minimum Required</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>60</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>-</font></b></td>
+</tr>
+<tr>
+<td align="left" colspan="2"  bgcolor="#D9E3EE">&nbsp;<b><FONT face=Arial size=2 color=#013C5B>Completed</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>57</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>15</font></b></td>
+</tr>
+</table>
+<br />
+
+    <script>
+        if(("Y" == "Y") && (57 <  60.00)){
+            var fieldNameElement = document.getElementById("is_passed_2_" + 3);
+            if(fieldNameElement != null) {
+                fieldNameElement.src = "/images/s_not.jpg";
+                fieldNameElement.setAttribute("class", "incomp");
+            }
+        }
+    </script>
+ 
+<table  width="200" border="1" cellspacing="0" cellpadding="0" bordercolor="#000000">
+<tr>
+<td colspan="4" align="center" bgcolor="#D9E3EE"><b> <FONT face=Arial size=2 color=#013C5B><img src="/images/s_ok.jpg" id="is_passed_2_4" /> ENGINEERING</Font></b></td>
+</tr>
+<tr>
+<td align="Left"  bgcolor="#D9E3EE">&nbsp;<b><FONT face=Arial size=2 color=#013C5B>Course</b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>Grade</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>ECTS Credits</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>Term</font></b></td>
+</tr>
+<tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;CS&nbsp;201</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;S</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>6</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202002</font></td>
+</tr>
+<tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;CS&nbsp;204</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;B-</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>6</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202101</font></td>
+</tr>
+<tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;CS&nbsp;305</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;I.P.</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>6</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202301</font></td>
+</tr>
+<tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;CS&nbsp;306</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;D+</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>6</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202102</font></td>
+</tr>
+<tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;CS&nbsp;308</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;B-</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>7</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202202</font></td>
+</tr>
+<tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;CS&nbsp;310</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;A-</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>6</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202201</font></td>
+</tr>
+<tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;CS&nbsp;408</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;B-</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>6</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202201</font></td>
+</tr>
+<tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;ENS&nbsp;491</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;A</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>2</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202202</font></td>
+</tr>
+<tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;ENS&nbsp;492</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;I.P.</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>5</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202301</font></td>
+</tr>
+<tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;ECON&nbsp;201</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;B+</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>3</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202101</font></td>
+</tr>
+<tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;CS&nbsp;300</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;B</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>5</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202102</font></td>
+</tr>
+<tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;CS&nbsp;301</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;C+</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>5</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202201</font></td>
+</tr>
+<tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;CS&nbsp;303</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;I.P.</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>6</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202301</font></td>
+</tr>
+<tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;CS&nbsp;411</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;I.P.</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>6</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202301</font></td>
+</tr>
+<tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;CS&nbsp;412</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;B</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>3</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202103</font></td>
+</tr>
+<tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;NS&nbsp;216</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;B+</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>1</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202202</font></td>
+</tr>
+<tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;CS&nbsp;210</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;A</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>4</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202102</font></td>
+</tr>
+<tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;IF&nbsp;100</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;A</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>5</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202001</font></td>
+</tr>
+<tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;PROJ&nbsp;201</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;A</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>1</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202001</font></td>
+</tr>
+<tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;CS&nbsp;395</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;S</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>5</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202203</font></td>
+</tr>
+<tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;CS&nbsp;414</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;B+</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>6</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202202</font></td>
+</tr>
+<tr>
+<td colspan="5">&nbsp;&nbsp;&nbsp;<a style="text-decoration:none" href="SU_DEGREE.p_degree_detail?P_TERM=201901&P_PROGRAM=BSCS&P_SUBMIT=&P_LANG=EN&P_LEVEL=UG#ENG_SCIE" target="_self"><b><font face=tahoma,arial size=1 color=#00287f>Click here for ENGINEERING</font></b></a><br></td>
+</tr>
+<tr>
+<td align="left" colspan="2"  bgcolor="#D9E3EE">&nbsp;<b><FONT face=Arial size=2 color=#013C5B>&nbsp;</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>ECTS Credits</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>Courses</font></b></td>
+</tr>
+<td align="left" colspan="2"  bgcolor="#D9E3EE">&nbsp;<b><FONT face=Arial size=2 color=#013C5B>Minimum Required</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>90</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>-</font></b></td>
+</tr>
+<tr>
+<td align="left" colspan="2"  bgcolor="#D9E3EE">&nbsp;<b><FONT face=Arial size=2 color=#013C5B>Completed</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>100</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>21</font></b></td>
+</tr>
+</table>
+<br />
+
+    <script>
+        if(("Y" == "Y") && (100 <  90.00)){
+            var fieldNameElement = document.getElementById("is_passed_2_" + 4);
+            if(fieldNameElement != null) {
+                fieldNameElement.src = "/images/s_not.jpg";
+                fieldNameElement.setAttribute("class", "incomp");
+            }
+        }
+    </script>
+ 
+</td>
+<td width="250" align="right" valign="top">
+<table  width="240" border="1" cellspacing="0" cellpadding="0" bordercolor="#000000">
+<tr>
+<td colspan="5" align="center" bgcolor="#D9E3EE"><b> <FONT face=Arial size=2 color=#013C5B><img src="/images/s_ok.jpg" id="is_passed_3_0" /> FACULTY COURSES</Font></b></td>
+</tr>
+<tr>
+<td align="Left"  bgcolor="#D9E3EE">&nbsp;<b><FONT face=Arial size=2 color=#013C5B>Course</b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>Grade</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>ECTS Credits</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>SU Credits</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>Term</font></b></td>
+</tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;MATH&nbsp;201</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;C+</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>6</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>3</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202101</font></td>
+</tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;MATH&nbsp;203</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;B</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>6</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>3</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202101</font></td>
+</tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;CS&nbsp;201</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;S</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>6</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>3</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202002</font></td>
+</tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;ECON&nbsp;201</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;B+</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>6</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>3</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202101</font></td>
+</tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;MATH&nbsp;204</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;B-</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>6</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>3</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202102</font></td>
+</tr>
+<tr>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;CS&nbsp;300</font></td>
+<td align="Left"><FONT face=Arial size=1 color=#013C5B>&nbsp;&nbsp;&nbsp;&nbsp;B</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>6</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>3</font></td>
+<td align="center"><FONT face=Arial size=1 color=#013C5B>202102</font></td>
+</tr>
+<tr>
+<td colspan="5">&nbsp;&nbsp;&nbsp;<a style="text-decoration:none" href="SU_DEGREE.p_degree_detail?P_TERM=201901&P_PROGRAM=BSCS&P_SUBMIT=&P_LANG=EN&P_LEVEL=UG#FC_FENS" target="_blank"><b><font face=tahoma,arial size=1 color=#00287f>Click here for FACULTY COURSES</font></b></a><br></td>
+</tr>
+<tr>
+<td align="left" colspan="2"  bgcolor="#D9E3EE">&nbsp;<b><FONT face=Arial size=2 color=#013C5B>&nbsp;</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>ECTS Credits</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>SU Credits</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>Courses</font></b></td>
+</tr>
+<tr>
+<td align="left" colspan="2"  bgcolor="#D9E3EE">&nbsp;<b><FONT face=Arial size=2 color=#013C5B>Completed</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>36</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>18</font></b></td>
+<td align="center"  bgcolor="#D9E3EE"><b><FONT face=Arial size=2 color=#013C5B>6</font></b></td>
+</tr>
+</table>
+
+    <script>
+        if ( ("Y" == "Y") && (36 < 0.00)){
+            var fieldNameElement = document.getElementById("is_passed_3_" + 0);
+            if(fieldNameElement != null) {
+                fieldNameElement.src = "/images/s_not.jpg";
+                fieldNameElement.setAttribute("class", "incomp");
+            }
+        }
+    </script>
+ 
+</td>
+</tr>
+</table>
+<a href="SU_DEGREE.p_degree_detail?P_TERM=201901&P_PROGRAM=BSCS&P_SUBMIT=&P_LANG=EN&P_LEVEL=UG" target="_blank"><font face=tahoma,arial size=2 color=#00287f><b>Click here for BSCS Degree Requirements</b></font></a>
+<br><b><font face=tahoma,arial size=2 color=green>TLL 001: Satisfactory </font></b>
+
+   <script>
+      var fieldNameElement = document.getElementById("ects_completed");
+      if(fieldNameElement != null) {
+          fieldNameElement.innerHTML = (222);
+      }
+   </script>
+ 
+
+    <script>
+        if (("N" == "Y") && (222 <  240.00)){
+            var fieldNameElement = document.getElementById("is_passed_0");
+            if(fieldNameElement != null) {
+                fieldNameElement.src = "/images/s_not.jpg";
+                fieldNameElement.setAttribute("class", "incomp");
+            }
+        }
+        
+        var len = document.getElementsByClassName("incomp").length;
+        var inprg = 460;
+        
+        if(len > 0)
+        {
+            document.getElementById("result").innerHTML = "<font face=tahoma,arial size=2 color=red><b>&nbsp;&nbsp;&nbsp;Degree requirements are not met.</b></font>";
+        }
+        else if(len <= 0 && inprg > 0)
+        {
+            document.getElementById("result").innerHTML = "<font face=tahoma,arial size=2 color=orange><b>&nbsp;&nbsp;&nbsp;Degree requirements are registered.</b></font>";
+        } 
+        else
+        {
+            document.getElementById("result").innerHTML = "<font face=tahoma,arial size=2 color=green><b>&nbsp;&nbsp;&nbsp;Degree requirements are met.</b></font>"; 
+        }
+    </script>
+ 
+</center>
+</body>
+</html>
